@@ -1,27 +1,27 @@
-Perfis de Usuários 
+## Perfis de Usuários 
 
-|**Dono da veterinária** ||
+|**Dono da veterinária** |
 | - | :- |
 |**Descrição:**  |Proprietário de clínica veterinária |
 |**Necessidades:**  |<p>1. Criar um canal de comunicação que permita a exposição e fácil acesso de seus serviços pelos seus clientes finais </p><p>2. Visualizar cronograma de atendimentos da equipe médica  </p>|
 
 
 
-|**Médico veterinário** ||
+|**Médico veterinário** |
 | - | :- |
 |**Descrição:**  |Prestador de serviço ou funcionário de uma clínica veterinária. |
 |**Necessidades:**  |<p>1. Visualizar os agendamentos referentes ao mesmo  </p><p>2. Confirmar agendamentos </p><p>3. Passar de forma pratica as orientações e prescrição médica do tratamento para o cliente </p>|
 
 
 
-|**Dono de animais** ||
+|**Dono de animais** |
 | - | :- |
 |**Descrição:**  |Dono de animais de estimação que precisam de atendimento veterinário |
 |**Necessidades:**  |<p>1. Acesso facilitado a uma plataforma que lista clínicas na sua região  </p><p>2. Possibilidade de agendamento para seu animal </p><p>3. Suporte pós atendimento </p>|
 
 
 
-Histórias de usuários 
+## Histórias de usuários 
 
 |<p>**Eu como …** </p><p>**[QUEM]** </p>|**… quero/desejo …**  <br>**[O QUE]** |<p>**… para ....** </p><p>**[PORQUE]** </p>|
 | :-: | :-: | :-: |
@@ -41,9 +41,9 @@ Histórias de usuários 
 |<p>Dono de animal de estimação </p><p> </p>|Agendar consultas para meu animal de forma simples e rápida |Garantir seu bem-estar sem complicações |
 |<p>Dono de animal de estimação </p><p> </p>|Receber suporte pós-atendimento como informações sobre cuidados e acompanhamento |Assegurar a recuperação do meu pet por meio de uma adequada posologia e cumprimento da prescrição |
 
-Requisitos do Projeto 
+# Requisitos do Projeto 
 
-Requisitos Funcionais 
+## Requisitos Funcionais 
 
 |**ID** |**Descrição** |**Prioridade** ||
 | :-: | :-: | :-: | :- |
@@ -62,11 +62,11 @@ Requisitos Funcionais 
 |RF-13 |Disponibilizar uma lista de clínicas veterinárias próximas ao usuário, com serviços oferecidos. |ALTA ||
 |RF-14 |Habilitar agendamento ou cancelamento online de consultas, vacinações e procedimentos para pets. |ALTA ||
 |RF-15 |Prover suporte pós-atendimento, incluindo informações sobre posologia e prescrição. |MÉDIA ||
-| | | ||
 
 
 
-Requisitos não funcionais 
+
+## Requisitos não funcionais 
 
 |**ID** |**Descrição** |**Prioridade** |
 | :-: | :-: | :-: |
