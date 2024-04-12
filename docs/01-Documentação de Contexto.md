@@ -34,4 +34,5 @@ O público-alvo do site de veterinária inclui: 
 <li>Donos de clínicas  veterinárias  interessados em aumentar sua influência e visibilidade. 
 <li>Médico veterinário que precisa passar informações para seus clientes como receitas e posologias 
 </ul>
+
 Em resumo, este projeto visa preencher uma lacuna no mercado ao oferecer uma plataforma online abrangente e acessível para atender às necessidades de proprietários de animais de estimação e profissionais veterinários, promovendo o bem-estar animal e facilitando o acesso aos serviços veterinários.
