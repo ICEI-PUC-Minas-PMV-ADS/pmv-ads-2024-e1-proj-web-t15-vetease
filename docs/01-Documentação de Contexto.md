@@ -26,7 +26,7 @@ O objetivo deste projeto é desenvolver um site de veterinária intuitivo, infor
 
 A criação deste site de veterinária é justificada pela necessidade de melhorar o acesso à informação e aos serviços veterinários, proporcionando uma experiência mais conveniente e eficiente para os proprietários de animais de estimação. Além disso, o site pode ajudar as clínicas veterinárias a expandirem sua presença online, aumentarem sua base de clientes e oferecerem serviços de forma mais eficaz. 
 
-##Público-alvo 
+## Público-alvo 
 
 O público-alvo do site de veterinária inclui: 
 <ul>
