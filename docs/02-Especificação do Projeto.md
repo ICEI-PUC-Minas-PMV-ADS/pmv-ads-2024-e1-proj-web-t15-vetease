@@ -1,29 +1,99 @@
+# Especificações do Projeto
+
 ## Perfis de Usuários 
 
-|**Dono da veterinária** |
-| - | :- |
-|**Descrição:**  |Proprietário de clínica veterinária |
-|**Necessidades:**  |<p>1. Criar um canal de comunicação que permita a exposição e fácil acesso de seus serviços pelos seus clientes finais </p><p>2. Visualizar cronograma de atendimentos da equipe médica  </p>|
+<table>
+    <tbody>
+        <tr>
+            <th colspan="2">
+                <p><strong>Dono da veterinária</strong></p>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>Descrição:</strong></p>
+            </td>
+            <td><p>Proprietário de clínica veterinária&nbsp;</p></td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>Necessidades:</strong></p>
+            </td>
+            <td>
+                <ol>
+                    <li>Criar um canal de comunicação que permita a exposição e fácil acesso de seus serviços pelos seus clientes finais&nbsp;</li>
+                    <li>Visualizar cronograma de atendimentos da equipe médica&nbsp;&nbsp;</li>
+                </ol>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
+&nbsp;
 
+<table>
+    <tbody>
+        <tr>
+            <th colspan="2">
+                <p><strong>Médico veterinário</strong></p>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>Descrição:</strong></p>
+            </td>
+            <td><p>Prestador de serviço ou funcionário de uma clínica veterinária.&nbsp;</p></td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>Necessidades:</strong></p>
+            </td>
+            <td>
+                <ol>
+                    <li>Visualizar os agendamentos referentes ao mesmo&nbsp;&nbsp;</li>
+                    <li>Confirmar agendamentos&nbsp;</li>
+                    <li>Passar de forma pratica as orientações e prescrição médica do tratamento para o cliente&nbsp;</li>
+                </ol>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-|**Médico veterinário** |
-| - | :- |
-|**Descrição:**  |Prestador de serviço ou funcionário de uma clínica veterinária. |
-|**Necessidades:**  |<p>1. Visualizar os agendamentos referentes ao mesmo  </p><p>2. Confirmar agendamentos </p><p>3. Passar de forma pratica as orientações e prescrição médica do tratamento para o cliente </p>|
+&nbsp;
 
+<table>
+    <tbody>
+        <tr>
+            <th colspan="2">
+                <p><strong>Dono de animais</strong></p>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>Descrição:</strong></p>
+            </td>
+            <td><p>Dono de animais de estimação que precisam de atendimento veterinário&nbsp;</p></td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>Necessidades:</strong></p>
+            </td>
+            <td>
+                <ol>
+                    <li>Acesso facilitado a uma plataforma que lista clínicas na sua região&nbsp;&nbsp;</li>
+                    <li>Possibilidade de agendamento para seu animal&nbsp;</li>
+                    <li>Suporte pós atendimento&nbsp;</li>
+                </ol>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-
-|**Dono de animais** |
-| - | :- |
-|**Descrição:**  |Dono de animais de estimação que precisam de atendimento veterinário |
-|**Necessidades:**  |<p>1. Acesso facilitado a uma plataforma que lista clínicas na sua região  </p><p>2. Possibilidade de agendamento para seu animal </p><p>3. Suporte pós atendimento </p>|
-
-
+&nbsp;
 
 ## Histórias de usuários 
 
-|<p>**Eu como …** </p><p>**[QUEM]** </p>|**… quero/desejo …**  <br>**[O QUE]** |<p>**… para ....** </p><p>**[PORQUE]** </p>|
+|<p>**Eu como …** </p><p>**PERSONA** </p>|**… quero/desejo …**  <br>**FUNCIONALIDADE** |<p>**… para ....** </p><p>**MOTIVO/VALOR** </p>|
 | :-: | :-: | :-: |
 |Dono da clínica |Cadastrar minha empresa |Disponibilizar meus serviços em um meio digital visando ampliar minha carteira de clientes |
 |<p>Dono da clínica </p><p> </p>|Visualizar o cronograma de atendimentos da minha equipe médica. |Acompanhar o agendamento e disponibilidade dos meus colaboradores  |
@@ -45,23 +115,23 @@
 
 ## Requisitos Funcionais 
 
-|**ID** |**Descrição** |**Prioridade** ||
-| :-: | :-: | :-: | :- |
-|RF-01 |Permitir o cadastro de clínicas veterinárias  |ALTA ||
-|RF-02 |Possibilitar que donos de clínicas visualizem o cronograma de atendimentos de sua equipe médica. |ALTA ||
-|RF-03 |Habilitar o cadastro de colaboradores (veterinários) pelo dono da clínica. |ALTA ||
-|RF-04 |Permitir o cadastro de novos serviços da clínica |ALTA ||
-|RF-05 |remoção de colaboradores (veterinários) pelo dono da clínica. |ALTA ||
-|RF-06 |Disponibilizar a listagem de todos os colaboradores, incluindo suas especialidades, no site. |ALTA ||
-|RF-07 |Permitir que veterinários visualizem suas agendas de agendamentos online. |ALTA ||
-|RF-08 |Possibilitar que veterinários confirmem ou cancelem agendamentos e comunicando aos clientes. |ALTA ||
-|RF-09 |Habilitar veterinários a passar orientações e prescrições médicas de forma prática para os clientes. |ALTA ||
-|RF-10 |Facilitar o processo de convite e aceitação de novos veterinários para participar da plataforma. |BAIXO ||
-|RF-11 |Oferecer aos donos de animais um meio de realizar cadastro no aplicativo/site. |ALTA ||
-|RF-12 |Permitir que donos de animais pesquisem informações sobre sintomas comuns, bem-estar e adestramento. |ALTA ||
-|RF-13 |Disponibilizar uma lista de clínicas veterinárias próximas ao usuário, com serviços oferecidos. |ALTA ||
-|RF-14 |Habilitar agendamento ou cancelamento online de consultas, vacinações e procedimentos para pets. |ALTA ||
-|RF-15 |Prover suporte pós-atendimento, incluindo informações sobre posologia e prescrição. |MÉDIA ||
+|**ID** |**Descrição** |**Prioridade** |
+| :-: | :-: | :-: |
+|RF-01 |Permitir o cadastro de clínicas veterinárias  |ALTA |
+|RF-02 |Possibilitar que donos de clínicas visualizem o cronograma de atendimentos de sua equipe médica. |ALTA |
+|RF-03 |Habilitar o cadastro de colaboradores (veterinários) pelo dono da clínica. |ALTA |
+|RF-04 |Permitir o cadastro de novos serviços da clínica |ALTA |
+|RF-05 |remoção de colaboradores (veterinários) pelo dono da clínica. |ALTA |
+|RF-06 |Disponibilizar a listagem de todos os colaboradores, incluindo suas especialidades, no site. |ALTA |
+|RF-07 |Permitir que veterinários visualizem suas agendas de agendamentos online. |ALTA |
+|RF-08 |Possibilitar que veterinários confirmem ou cancelem agendamentos e comunicando aos clientes. |ALTA |
+|RF-09 |Habilitar veterinários a passar orientações e prescrições médicas de forma prática para os clientes. |ALTA |
+|RF-10 |Facilitar o processo de convite e aceitação de novos veterinários para participar da plataforma. |BAIXO |
+|RF-11 |Oferecer aos donos de animais um meio de realizar cadastro no aplicativo/site. |ALTA |
+|RF-12 |Permitir que donos de animais pesquisem informações sobre sintomas comuns, bem-estar e adestramento. |ALTA |
+|RF-13 |Disponibilizar uma lista de clínicas veterinárias próximas ao usuário, com serviços oferecidos. |ALTA |
+|RF-14 |Habilitar agendamento ou cancelamento online de consultas, vacinações e procedimentos para pets. |ALTA |
+|RF-15 |Prover suporte pós-atendimento, incluindo informações sobre posologia e prescrição. |MÉDIA |
 
 
 
