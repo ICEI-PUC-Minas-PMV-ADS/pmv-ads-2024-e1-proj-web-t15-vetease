@@ -17,7 +17,7 @@ O Scrum é um framework de desenvolvimento ágil que promove a colaboração em 
             <td>
                 <p><strong>scrum master</strong></p>
             </td>
-            <td><p>Thiago vinicius&nbsp;</p></td>
+            <td><p>Thiago Murtinho&nbsp;</p></td>
         </tr>
         <tr>
             <td>
@@ -35,7 +35,7 @@ O Scrum é um framework de desenvolvimento ágil que promove a colaboração em 
             <td>
                 <p><strong>equipe de desenvolvimento</strong></p>
             </td>
-            <td><p>Beatriz Rodrigues, Augusto Cesar, Augusto Pivani, Thiago Vinicius, João Amancio, Isabella, Eduardo Porto&nbsp;</p></td>
+            <td><p>Beatriz Rodrigues, Augusto Cesar, Augusto Pivani, Thiago Murtinho, João Amancio, Isabella, Eduardo Porto&nbsp;</p></td>
         </tr>
     </tbody>
 </table>
