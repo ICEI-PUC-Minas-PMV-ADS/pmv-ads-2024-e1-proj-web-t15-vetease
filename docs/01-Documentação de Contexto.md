@@ -11,7 +11,7 @@ Nesse cenário, surge a necessidade de soluções inovadoras e tecnológicas que
 
 ## Problema 
 
-O setor veterinário muitas vezes enfrenta desafios de comunicação e acessibilidade. Proprietários de animais podem ter dificuldade em encontrar informações sobre cuidados apos procedimentos, marcar consultas ou acessar recursos educacionais sobre bem-estar animal. Além disso, algumas clínicas podem ter presença online limitada ou não otimizada, o que dificulta a sua visibilidade e alcance. 
+O setor veterinário muitas vezes enfrenta desafios de comunicação e acessibilidade. Proprietários de animais podem ter dificuldade em encontrar informações sobre cuidados após procedimentos, marcar consultas ou acessar recursos educacionais sobre bem-estar animal. Além disso, algumas clínicas podem ter presença online limitada ou não otimizada, o que dificulta a sua visibilidade e alcance. 
 
 ## Objetivos 
 
@@ -31,7 +31,7 @@ A criação deste site de veterinária é justificada pela necessidade de melhor
 O público-alvo do site de veterinária inclui: 
 <ul>
 <li>Proprietários de animais de estimação de todas as idades e origens socioeconômicas que buscam informações e serviços relacionados à saúde e ao bem-estar de seus animais. 
-<li>Donos de clínicas veterinárias interessados em aumentar sua pratiticidade e visibilidade. 
+<li>Donos de clínicas veterinárias interessados em aumentar sua praticidade  e visibilidade. 
 <li>Médico veterinário que precisa passar informações para seus clientes como receitas e posologias 
 </ul>
 

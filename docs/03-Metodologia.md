@@ -51,6 +51,10 @@ Para a organização, acompanhamento do andamento do projeto, execução de tare
 - ⁠In progress : tarefas que estão em andamento
 - ⁠Done: tarefas finalizadas que passam por controle, prontas a serem entregues 
 
+O board kanban referente ao acompanhamento do projeto esta disponivel no link a seguir e esta representado, no estado atual, na figura abaixo:
+
+![](img/board.png)
+
 ### Ferramentas
 
 
