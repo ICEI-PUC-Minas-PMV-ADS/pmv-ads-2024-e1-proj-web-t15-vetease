@@ -1,23 +1,26 @@
-# TÍTULO DO PROJETO
+# VETeasy
 
-`CURSO`
+`ADS`
 
-`DISCIPLINA`
+`Projeto web frontend`
 
-`SEMESTRE`
+`1º SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Site para controle e requisicao de agendamentos em clinica veterinaria focando no pos atendimento disponibilizando de forma pratica as recomendacoes medicas e provendo dicas de saude e bem estar para seu pet
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Augusto César Ávila do Nascimento
+* Augusto Pavini Dourado
+* Beatriz Rodrigues Martins
+* Eduardo Porto Botelho
+* Isabella da Costa Oliveira
+* Joao Victor Amancio
+* Thiago Vinicius Martins Murtinho
 
 ## Orientador
 
-* Nome completo do professor 1
+* Viviâne de Almeida Tôrres
 
 ## Instruções de utilização
 
