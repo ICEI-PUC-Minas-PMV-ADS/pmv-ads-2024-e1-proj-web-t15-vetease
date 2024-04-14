@@ -55,6 +55,11 @@ O board kanban referente ao acompanhamento do projeto esta disponivel no link a 
 
 ![](img/board.png)
 
+### Etiquetas
+As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:
+
+![](img/labels.png)
+
 ### Ferramentas
 
 
