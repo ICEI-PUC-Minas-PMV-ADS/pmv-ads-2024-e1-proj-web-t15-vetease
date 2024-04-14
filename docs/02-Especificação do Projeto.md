@@ -1,12 +1,12 @@
 # Especificações do Projeto
 
-## Perfis de Usuários 
+## Perfis de Usuários
 
 <table>
     <tbody>
         <tr>
             <th colspan="2">
-                <p><strong>Dono da veterinária</strong></p>
+                <p><strong>Administrador da veterinária</strong></p>
             </th>
         </tr>
         <tr>
@@ -22,7 +22,7 @@
             <td>
                 <ol>
                     <li>Criar um canal de comunicação que permita a exposição e fácil acesso de seus serviços pelos seus clientes finais&nbsp;</li>
-                    <li>Visualizar cronograma de atendimentos da equipe médica&nbsp;&nbsp;</li>
+                    <li>Visualizar os agendamentos referentes a equipe&nbsp;&nbsp;</li>
                 </ol>
             </td>
         </tr>
@@ -51,8 +51,8 @@
             <td>
                 <ol>
                     <li>Visualizar os agendamentos referentes ao mesmo&nbsp;&nbsp;</li>
-                    <li>Confirmar agendamentos&nbsp;</li>
-                    <li>Passar de forma pratica as orientações e prescrição médica do tratamento para o cliente&nbsp;</li>
+                    <li>Confirmar/Negar agendamentos&nbsp;</li>
+                    <li>Passar de forma pratica as orientações e a prescrição médica do tratamento para o cliente&nbsp;</li>
                 </ol>
             </td>
         </tr>
@@ -65,14 +65,14 @@
     <tbody>
         <tr>
             <th colspan="2">
-                <p><strong>Dono de animais</strong></p>
+                <p><strong>Tutor de animal de estimação </strong></p>
             </th>
         </tr>
         <tr>
             <td>
                 <p><strong>Descrição:</strong></p>
             </td>
-            <td><p>Dono de animais de estimação que precisam de atendimento veterinário&nbsp;</p></td>
+            <td><p>Tutor de animal de estimação que precisam de atendimento veterinário&nbsp;</p></td>
         </tr>
         <tr>
             <td>
@@ -80,7 +80,7 @@
             </td>
             <td>
                 <ol>
-                    <li>Acesso facilitado a uma plataforma que lista clínicas na sua região&nbsp;&nbsp;</li>
+                    <li>Acesso facilitado a uma plataforma que lista os servicos disponiveis&nbsp;&nbsp;</li>
                     <li>Possibilidade de agendamento para seu animal&nbsp;</li>
                     <li>Suporte pós atendimento&nbsp;</li>
                 </ol>
@@ -91,59 +91,67 @@
 
 &nbsp;
 
-## Histórias de usuários 
+## Histórias de usuários
 
-|<p>**Eu como …** </p><p>**PERSONA** </p>|**… quero/desejo …**  <br>**FUNCIONALIDADE** |<p>**… para ....** </p><p>**MOTIVO/VALOR** </p>|
-| :-: | :-: | :-: |
-|Dono da clínica |Cadastrar minha empresa |Disponibilizar meus serviços em um meio digital visando ampliar minha carteira de clientes |
-|<p>Dono da clínica </p><p> </p>|Visualizar o cronograma de atendimentos da minha equipe médica. |Acompanhar o agendamento e disponibilidade dos meus colaboradores  |
-|<p>Dono da clínica </p><p> </p>|Cadastrar novos colaboradores |Acompanhar o cronograma de atendimentos desses profissionais |
-|<p>Dono da clínica </p><p> </p>|Cadastrar novos serviços |Permitir agendamentos por parte dos clientes as novidades da clínica |
-|<p>Dono da clínica </p><p> </p>|Remover colaboradores que desligarem da minha equipe. |Que colaboradores desligados não estejam mais disponíveis para agendamentos por parte dos clientes  |
-|<p>Dono da clínica </p><p> </p>|Listar todos os colaboradores e suas informações básicas. |Ter controle dos profissionais e suas respectivas especialidades  |
-|Médico Veterinário |Visualizar minha agenda de agendamentos online |Planejar meu dia e preparar os matérias necessários |
-|<p>Médico Veterinário </p><p> </p>|Confirmar/Negar agendamentos de forma prática e comunicar quaisquer mudanças aos clientes |Manter a organização e a eficiência respeitando minha disponibilidade. |
-|<p>Médico Veterinário </p><p> </p>|Passar de forma prática as orientações e prescrições médicas para os clientes |Garantir a clareza e a precisão das informações ao auxiliar o dono do meu paciente. |
-|<p>Médico Veterinário </p><p> </p>|Receber o convite para participar da plataforma |<p>Aceitar o convite enviado pelo dono da Clínica para participar da plataforma. </p><p> </p>|
-|<p>Dono de animal de estimação </p><p> </p>|Realizar o cadastro no aplicativo |Ter acesso as facilidades do agendamento e informações uteis ao bem estar do meu pet |
-|Dono de animal de estimação |pesquisar informações sobre sintomas comuns em animais de estimação e dicas de adestramento / bem-estar |que eu possa garantir a saúde e o bem-estar do meu animal de estimação. |
-|Dono de animal de estimação |Acessar uma lista de clínicas veterinárias na minha região que ofereçam serviços como consultas, vacinações e emergências. |Encontrar opções de atendimento facilmente |
-|<p>Dono de animal de estimação </p><p> </p>|Agendar consultas para meu animal de forma simples e rápida |Garantir seu bem-estar sem complicações |
-|<p>Dono de animal de estimação </p><p> </p>|Receber suporte pós-atendimento como informações sobre cuidados e acompanhamento |Assegurar a recuperação do meu pet por meio de uma adequada posologia e cumprimento da prescrição |
+|<p>**Eu como …** </p><p>**PERSONA** </p>|<p>**Eu como …** </p><p>**PERSONA** </p>|**… quero/desejo …**  <br>**FUNCIONALIDADE** |<p>**… para ....** </p><p>**MOTIVO/VALOR** </p>|
+| :-: | :-: | :-: | :-: |
+|H-01|administrador da clínica |Cadastrar minha empresa |Disponibilizar meus serviços em um meio digital visando ampliar minha carteira de clientes |
+|H-02|Qualquer usuário da aplicação|Visualizar os meus agendamentos . |Acompanhar e interagir com esse registro  |
+|H-03|Médico Veterinário|Confirmar/Negar agendamentos de forma prática e comunicar quaisquer mudanças aos clientes |Manter a organização e a eficiência respeitando minha disponibilidade. |
+|H-04|Médico Veterinário|Passar de forma prática as orientações e prescrições médicas para os clientes |Garantir a clareza e a precisão das informações ao auxiliar o administrador do meu paciente. |
+|H-05|Tutor de animal de estimação |Realizar o meu cadastro no aplicativo |Ter acesso as facilidades do agendamento e informações uteis ao bem estar do meu pet |
+|H-06|Tutor de animal de estimação |pesquisar informações sobre sintomas comuns em animais de estimação e dicas de adestramento / bem-estar |que eu possa garantir a saúde e o bem-estar do meu animal de estimação. |
+|H-07|Tutor de animal de estimação |Agendar consultas para meu animal de forma simples e rápida |Garantir seu bem-estar sem complicações |
+|H-08|Tutor de animal de estimação |Receber suporte pós-atendimento como informações sobre cuidados e acompanhamento |Assegurar a recuperação do meu pet por meio de uma adequada posologia e cumprimento da prescrição |
+|H-09|Tutor de animal de estimação |pesquisar por servicos disponiveis|encontrar e realizar meu agendamento de forma ágil |
+|H-10|Qualquer usuário da aplicação|atualizar minhas informacoes|mitigar possíveis erros e manter um cadastro atualizado |
+|H-11|Qualquer usuário da aplicação|Verificar detalhes sobre meus agendamentos|me manter a par de possíveis atualizações |
+|H-12|Tutor de animal de estimação |Consultar uma sessão clara de FAQ|facilitar a resolução de dúvidas/problemas mais frequentes   |
 
-# Requisitos do Projeto 
 
-## Requisitos Funcionais 
+# Requisitos do Projeto
+
+## Requisitos Funcionais
 
 |**ID** |**Descrição** |**Prioridade** |
 | :-: | :-: | :-: |
-|RF-01 |Permitir o cadastro de clínicas veterinárias  |ALTA |
-|RF-02 |Possibilitar que donos de clínicas visualizem o cronograma de atendimentos de sua equipe médica. |ALTA |
-|RF-03 |Habilitar o cadastro de colaboradores (veterinários) pelo dono da clínica. |ALTA |
-|RF-04 |Permitir o cadastro de novos serviços da clínica |ALTA |
-|RF-05 |remoção de colaboradores (veterinários) pelo dono da clínica. |ALTA |
-|RF-06 |Disponibilizar a listagem de todos os colaboradores, incluindo suas especialidades, no site. |ALTA |
-|RF-07 |Permitir que veterinários visualizem suas agendas de agendamentos online. |ALTA |
-|RF-08 |Possibilitar que veterinários confirmem ou cancelem agendamentos e comunicando aos clientes. |ALTA |
-|RF-09 |Habilitar veterinários a passar orientações e prescrições médicas de forma prática para os clientes. |ALTA |
-|RF-10 |Facilitar o processo de convite e aceitação de novos veterinários para participar da plataforma. |BAIXO |
-|RF-11 |Oferecer aos donos de animais um meio de realizar cadastro no aplicativo/site. |ALTA |
-|RF-12 |Permitir que donos de animais pesquisem informações sobre sintomas comuns, bem-estar e adestramento. |ALTA |
-|RF-13 |Disponibilizar uma lista de clínicas veterinárias próximas ao usuário, com serviços oferecidos. |ALTA |
-|RF-14 |Habilitar agendamento ou cancelamento online de consultas, vacinações e procedimentos para pets. |ALTA |
-|RF-15 |Prover suporte pós-atendimento, incluindo informações sobre posologia e prescrição. |MÉDIA |
+|RF-01 |Permitir o login do administrador da clínica veterinária  |ALTA |
+|RF-02 |Possibilitar que os usuários do aplicativo visualizem os próprios agendamentos. |ALTA |
+|RF-03 |Possibilitar que veterinários confirmem ou neguem agendamentos comunicando aos clientes. |ALTA |
+|RF-04 |Habilitar veterinários a passar orientações e prescrições médicas de forma prática para os clientes. |ALTA |
+|RF-05 |Oferecer aos Tutores de animais um meio de realizar cadastro no aplicativo/site. |ALTA |
+|RF-06 |Permitir que Tutores de animais pesquisem informações sobre sintomas comuns, bem-estar e adestramento. |ALTA |
+|RF-07 |Habilitar agendamento e cancelamento online de consultas, vacinações e procedimentos para pets. |ALTA |
+|RF-08 |Prover suporte pós-atendimento, incluindo informações sobre posologia e prescrição. |MÉDIA |
+|RF-09 |A aplicação deve oferecer uma funcionalidade de filtro/pesquisa de serviços para permitir ao usuário realizar o agendamento.|ALTA |
+|RF-10 |A aplicação deve permitir ao usuário atualizar as informações registradas no cadastro.|MEDIA |
+|RF-11 |A aplicação deve permitir que o usuário verifique detalhes sobre seus agendamentos|ALTA |
+|RF-12 |A aplicação deve permitir ao usuário visualizar uma sessão clara de FAQ e suporte ao usuário para dúvidas e problemas comuns.|BAIXA |
 
+## Requisitos não funcionais
 
-
-
-## Requisitos não funcionais 
-
-|**ID** |**Descrição** |**Prioridade** |
+|**ID** |**Descrição** |**Prioridade** |
 | :-: | :-: | :-: |
-|RNF-01 |O site deve ser compatível com os principais navegadores: Edge, Mozilla Firefox, e Google Chrome. |ALTA |
-|RNF-02 |Garantir um design responsivo para que o site seja acessível em dispositivos móveis e desktops. |ALTA |
-|RNF-03 |Implementar padrões de segurança para a proteção de dados pessoais e médicos dos usuários, em conformidade com leis de privacidade aplicáveis. |ALTA |
-|RNF-04 |Assegurar uma interface de usuário intuitiva e amigável, adaptada para facilitar a navegação por usuários por meio de navegação simples por menus. |ALTA |
-|RNF-05 |O site deve fornecer uma seção clara de FAQ e suporte ao usuário para dúvidas e problemas comuns. |ALTA |
-|RNF-06 |O site deve ter um design que siga as melhores práticas de UX/UI, para criar uma experiência de usuário positiva e engajadora. |ALTA |
-|RNF-07 |O sistema deve incluir uma estratégia de backup e recuperação de dados para prevenir a perda de informações importantes em caso de falhas. |MÉDIA |
+|RNF-01 |O site deve ser compatível com os principais navegadores: Edge, Mozilla Firefox, e Google Chrome. |ALTA |
+|RNF-02 |Garantir um design responsivo para que o site seja acessível tanto em notebooks quanto em smartphones. |ALTA |
+|RNF-03 |Implementar padrões de segurança para criação de senhas baseado no NIST. |ALTA |
+|RNF-04 |Assegurar uma interface de usuário simples, adaptada para prover dark mode. |ALTA |
+|RNF-05 |o site deve seguir um design minimalista para expor somente o necessário. |ALTA |
+
+O projeto está restrito pelos itens apresentados na tabela a seguir.
+
+|ID| Restrição                                             |
+|--|-------------------------------------------------------|
+|01| O projeto deverá ser entregue até o final do semestre |
+|02| Não pode ser desenvolvido um módulo de backend        |
+|03| Time terá uma grande curva de aprendizado             |
+
+### Exemplo de Processo – Agendar Consulta
+
+Como melhoria podemos considerar outras formas identificar o usuario em nossa plataforma considerando os impactos na experiencia do usuario
+
+![Processo 2](img/processo_agendar_consulta.png)
+
+## Possiveis Indicadores de Desempenho
+
+![Indicadores de Desempenho](img/indicadores_desempenho.png)
