@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>VetEasy</title>
+</head>
+<body>
+  <main>
+    <section class="login-container"> <!-- form section -->
+      <div> <!-- logo text -->
+        <h1><span>Vet</span>Easy</h1>
+      </div>
+      
+      <h3>Entrar</h3>
+
+      <form action="scripts.js">
+        <section> <!-- input de mail -->
+          <label for="email">E-mail</label>
+          <input type="email" name="email" placeholder="Digite seu e-mail">
+          <p>* Digite um e-mail válido!</p>
+        </section>
+        
+        <section> <!-- input de senha -->
+          <label for="password">Senha</label>
+          <input type="password" name="password" placeholder="Sua senha aqui">
+          <p>*Obrigatório digitar uma senha correta</p>
+        </section>
+        
+        <button type="button" class="btn btn-submit">Entrar</button> <!-- button -->
+      </form>
+
+      <div class="divider"> <!-- divider + text -->
+        <hr />
+        <p>Ou crie sua conta para ajudar seu pet</p>
+        <hr />
+      </div>
+
+      <button type="button" class="btn btn-create-account" id="form-submit">Criar conta</button> <!-- ir para criar conta -->
+    </section>
+
+    
+    <section class="image-container"> <!-- foto section -->
+      <img src="/assets/logar-image.png" alt="Background image">
+      <div></div>
+    </section>
+  </main>
+</body>
+</html>
