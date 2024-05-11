@@ -67,5 +67,5 @@ As tarefas são, ainda, etiquetadas em função da natureza da atividade e segue
 |--------------------|--------------------------------------------------------------------------------|----------------------------------------|
 |Repositório de código fonte | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj-web-t15-vetease/tree/main/src  |
 |Codificação  | Visual studio code | n/a |
-|Projeto de interface | Figma | https://www.figma.com/ |
+|Projeto de interface | Figma | https://www.figma.com/file/V6JEP2UtCUISry8zIqQkY2/VetEasy-PUC---Minas?type=design&node-id=1%3A2&mode=design&t=ifwy2riTtd5bwmBB-1 |
 |Gerenciamento do projeto  | GitHub | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1038|
