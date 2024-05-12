@@ -95,7 +95,7 @@
 
 |<p>**Eu como …** </p><p>**PERSONA** </p>|<p>**Eu como …** </p><p>**PERSONA** </p>|**… quero/desejo …**  <br>**FUNCIONALIDADE** |<p>**… para ....** </p><p>**MOTIVO/VALOR** </p>|
 | :-: | :-: | :-: | :-: |
-|H-01|administrador da clínica |Cadastrar minha empresa |Disponibilizar meus serviços em um meio digital visando ampliar minha carteira de clientes |
+|H-01|administrador da clínica |Realizar meu login no aplicativo |para administrar meus serviços em um meio digital visando ampliar minha carteira de clientes |
 |H-02|Qualquer usuário da aplicação|Visualizar os meus agendamentos . |Acompanhar e interagir com esse registro  |
 |H-03|Médico Veterinário|Confirmar/Negar agendamentos de forma prática e comunicar quaisquer mudanças aos clientes |Manter a organização e a eficiência respeitando minha disponibilidade. |
 |H-04|Médico Veterinário|Passar de forma prática as orientações e prescrições médicas para os clientes |Garantir a clareza e a precisão das informações ao auxiliar o administrador do meu paciente. |
