@@ -23,19 +23,19 @@ O Scrum é um framework de desenvolvimento ágil que promove a colaboração em 
             <td>
                 <p><strong>dono do produto</strong></p>
             </td>
-            <td><p>João Amancio&nbsp;</p></td>
+            <td><p>Augusto César&nbsp;</p></td>
         </tr>
         <tr>
             <td>
                 <p><strong>equipe de design</strong></p>
             </td>
-            <td><p>Augusto Pavini, Isabella, Eduardo Porto&nbsp;</p></td>
+            <td><p>Isabella, Eduardo Porto&nbsp;</p></td>
         </tr>
         <tr>
             <td>
                 <p><strong>equipe de desenvolvimento</strong></p>
             </td>
-            <td><p>Beatriz Rodrigues, Augusto Cesar, Augusto Pivani, Thiago Murtinho, João Amancio, Isabella, Eduardo Porto&nbsp;</p></td>
+            <td><p>Beatriz Rodrigues, Augusto Cesar, Thiago Murtinho, Isabella, Eduardo Porto&nbsp;</p></td>
         </tr>
     </tbody>
 </table>
@@ -52,7 +52,7 @@ Para a organização, acompanhamento do andamento do projeto, execução de tare
 - ⁠Done: tarefas finalizadas que passam por controle, prontas a serem entregues 
 
 O board kanban referente ao acompanhamento do projeto esta disponivel no link a seguir e esta representado, no estado atual, na figura abaixo:
-
+https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1038
 ![](img/board.png)
 
 ### Etiquetas
