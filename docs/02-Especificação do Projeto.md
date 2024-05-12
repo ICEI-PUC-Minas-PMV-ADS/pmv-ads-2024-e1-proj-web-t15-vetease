@@ -95,7 +95,7 @@
 
 |<p>**Eu como …** </p><p>**PERSONA** </p>|<p>**Eu como …** </p><p>**PERSONA** </p>|**… quero/desejo …**  <br>**FUNCIONALIDADE** |<p>**… para ....** </p><p>**MOTIVO/VALOR** </p>|
 | :-: | :-: | :-: | :-: |
-|H-01|administrador da clínica |Cadastrar minha empresa |Disponibilizar meus serviços em um meio digital visando ampliar minha carteira de clientes |
+|H-01|administrador da clínica |Realizar meu login no aplicativo |Para administrar meus serviços em um meio digital visando ampliar minha carteira de clientes |
 |H-02|Qualquer usuário da aplicação|Visualizar os meus agendamentos . |Acompanhar e interagir com esse registro  |
 |H-03|Médico Veterinário|Confirmar/Negar agendamentos de forma prática e comunicar quaisquer mudanças aos clientes |Manter a organização e a eficiência respeitando minha disponibilidade. |
 |H-04|Médico Veterinário|Passar de forma prática as orientações e prescrições médicas para os clientes |Garantir a clareza e a precisão das informações ao auxiliar o administrador do meu paciente. |
@@ -134,7 +134,7 @@
 | :-: | :-: | :-: |
 |RNF-01 |O site deve ser compatível com os principais navegadores: Edge, Mozilla Firefox, e Google Chrome. |ALTA |
 |RNF-02 |Garantir um design responsivo para que o site seja acessível tanto em notebooks quanto em smartphones. |ALTA |
-|RNF-03 |Implementar padrões de segurança para criação de senhas baseado no NIST. |ALTA |
+|RNF-03 |Implementar padrões de segurança para criação de senhas baseado no NIST SP 800-30. |ALTA |
 |RNF-04 |Assegurar uma interface de usuário simples, adaptada para prover dark mode. |ALTA |
 |RNF-05 |o site deve seguir um design minimalista para expor somente o necessário. |ALTA |
 
