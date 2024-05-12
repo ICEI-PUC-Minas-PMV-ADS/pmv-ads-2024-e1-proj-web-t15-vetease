@@ -70,3 +70,5 @@ As tarefas são, ainda, etiquetadas em função da natureza da atividade e segue
 |Projeto de interface | Figma | https://www.figma.com/ |
 |Gerenciamento do projeto  | GitHub | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1038|
 |Documentação do projeto  |word| https://sgapucminasbr-my.sharepoint.com/:w:/g/personal/1532855_sga_pucminas_br/EeG3vBRbLBJGi68OormWJfwBBMGW-4qOBNG-gzTSex_4Qg?e=ynpmh7 |
+
+Para criar diagramas utilizamos o Figma que permite edição em tempo real de todos os participantes do grupo
