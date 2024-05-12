@@ -1,4 +1,4 @@
-# VETeasy
+# VETease
 
 `ADS`
 
@@ -11,11 +11,9 @@ Site para controle e requisicao de agendamentos em clinica veterinaria focando n
 ## Integrantes
 
 * Augusto César Ávila do Nascimento
-* Augusto Pavini Dourado
 * Beatriz Rodrigues Martins
 * Eduardo Porto Botelho
 * Isabella da Costa Oliveira
-* Joao Victor Amancio
 * Thiago Vinicius Martins Murtinho
 
 ## Orientador
