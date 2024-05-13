@@ -1,6 +1,5 @@
 # Apresentação
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
 
 [Vetease (1).pdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj-web-t15-vetease/files/15288173/Vetease.1.pdf)
 
