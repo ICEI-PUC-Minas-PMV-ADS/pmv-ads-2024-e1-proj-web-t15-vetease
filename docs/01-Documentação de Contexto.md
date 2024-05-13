@@ -9,10 +9,9 @@ A questão sobre o gerenciamento de medicamentos também se torna relevantes par
 
 Nesse cenário, surge a necessidade de soluções que possam auxiliar tanto os veterinários quanto os donos de pets em suas necessidades, garantindo um cuidado de qualidade para os animais de estimação e proporcionando tranquilidade aos seus proprietários. 
 
-
 ## Problema 
 
-O setor veterinário muitas vezes enfrenta desafios, como em marcar agendamentos, passar orientações de forma prática e entre outros. Proprietários de animais podem ter dificuldade em encontrar informações sobre cuidados após procedimentos, marcar consultas ou acessar recursos educacionais sobre bem-estar animal. Além disso, algumas clínicas podem ter presença online limitada ou não otimizada, o que dificulta a sua visibilidade e alcance. 
+O setor veterinário muitas vezes enfrenta desafios, como em marcar agendamentos, passar orientações de forma prática e entre outros. Proprietários de animais podem ter dificuldade em encontrar informações sobre cuidados após procedimentos, marcar consultas ou acessar recursos educacionais sobre bem-estar animal. Além disso, algumas clínicas podem ter presença online limitada ou não otimizada, o que dificulta a sua visibilidade e alcance. 
 
 ## Objetivos 
 
