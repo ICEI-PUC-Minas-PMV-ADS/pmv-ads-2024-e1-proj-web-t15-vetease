@@ -46,6 +46,7 @@
   <td>
    <ul>
     <li>RF-09:	O site deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário realizar o agendamento. </li>
+    <li>RF-06: Permitir que Tutores de animais pesquisem informações sobre sintomas comuns, bem-estar e adestramento.</li>
    </ul>
   </td>
   <td>Verificar se o filtro de pesquisa está recuperando os dados inseridos pelo usuário</td>
@@ -55,10 +56,10 @@
     <li>Informar o endereço do site.</li>
     <li>Visualizar a página Home.</li>
     <li>Clicar barra de pesquisa.</li>
-    <li>Digitar no filtro de pesquisa o seviço desejado e verificar se o resultado é exibido na página.</li>
+    <li>Digitar no filtro de pesquisa o seviço ou a dúvida desejada e verificar se o resultado é exibido na página.</li>
    </ol>
    </td>
-  <td>Os dados inseridos no filtro de pesquisa devem mostrar serviços disponiveis.</td>
+  <td>Os dados inseridos no filtro de pesquisa devem mostrar serviços disponiveis e respostas para dúvidas.</td>
   <td>Augusto</td>
  </tr>
 </table>
@@ -274,7 +275,7 @@
   <th>Responsável</th>  
  </tr>
  <tr>
-  <td>CT-09: permitir o veterinario o controle de agendamentos</td>
+  <td>CT-09: verificar o controle veterinario  de agendamentos</td>
   <td>
    <ul>
     <li>RF-04:	O site deve possibilitar que veterinário,prescreva medicamentos logo após o atendimento presencial.</li>
@@ -309,7 +310,7 @@
   <th>Responsável</th>  
  </tr>
  <tr>
-  <td>CT-10:Visualizar a área de prescrição</td>
+  <td>CT-10: verificar a área de prescrição do tutor</td>
   <td>
    <ul>
     <li>RF-08:Prover suporte pós-atendimento, incluindo informações sobre posologia e prescrição.</li>
