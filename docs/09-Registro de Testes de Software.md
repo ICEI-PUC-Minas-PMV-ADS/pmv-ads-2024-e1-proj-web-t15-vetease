@@ -1,8 +1,36 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
+CT-01: Verificar o funcionamento dos links da página Home
+Responsável: Isabella
 
-Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
+
+CT-02: Verificar o funcionamento do filtro de pesquisa
+Responsável: Augusto César
+
+CT-03: verificar se os usuários do aplicativo visualizam os próprios agendamentos e a sessão de FAQ.
+Responsável: Thiago
+
+CT-04: Verificar o cadastro de usuários
+Responsável: Eduardo
+
+CT-05: Verificar o login de usuários
+Responsável: Beatriz
+
+CT-06: Verificar a página de perfil de usuários cadastrados
+Responsável: Thiago
+
+CT-07: Verificar se o agendamento esta funcionando
+Responsável: Beatriz
+
+CT-08: verificar o controle do veterinario sobre o agendamentos
+Responsável: Eduardo
+
+CT-09: verificar o controle veterinario de agendamentos
+Responsável: Isabella
+
+CT-10: verificar a área de prescrição do tutor
+Responsável: Augusto César
+
 
 ## Avaliação
 
