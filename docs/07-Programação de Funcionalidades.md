@@ -13,6 +13,28 @@ Exemplo:
 
 ![site](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj-web-t15-vetease/assets/166762561/25bb50ac-a752-4c0f-b088-b1137c0d5295)
 
+
+#### Requisito funcional atendido
+
+RF1 e RF2: Deve permitir ao usuário efetuar cadastro e login na conta
+
+
+#### Artefatos da funcionalidade
+
+●
+
+●
+
+#### Estrutura de Dados
+
+●
+
+#### Instruções de acesso
+
+Abra seu navegador e digite a seguinte URL:
+
+Após esse processo será aberto a tela inicial do site.
+
 Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
 
 Para cada requisito funcional, pode ser entregue um artefato desse tipo
