@@ -219,14 +219,14 @@
     <li>Acessar o navegador.</li>
     <li>Informar o endereço do site.</li>
     <li>Visualizar a página Home.</li>
-    <li>logar na conta.</li>
-    <li>buscar na barra de pesquisa o serviço desejado</li>
-    <li>clicar em "agendar" no serviço requerido</li>
-    <li>preencher informações requisitadas</li>
-    <li>clicar em "confirmar"</li>
+    <li>Logar na conta.</li>
+    <li>Buscar na barra de pesquisa o serviço desejado</li>
+    <li>Clicar em "agendar" no serviço requerido</li>
+    <li>Preencher informações requisitadas</li>
+    <li>Clicar em "confirmar"</li>
    </ol>
    </td>
-  <td>realização do agendamento.</td>
+  <td> Realização do agendamento de forma eficaz.</td>
   <td>Beatriz</td>
  </tr>
 </table>
@@ -241,22 +241,22 @@
   <th>Responsável</th>  
  </tr>
  <tr>
-  <td>CT-08: permitir o veterinario o controle de agendamentos</td>
+  <td>CT-08: verificar o controle do veterinario spbre o agendamentos</td>
   <td>
    <ul>
-    <li>RF-03:	O site deve possibilitar que veterinários, visualizem e confirmem ou neguem agendamentos.</li>
+    <li>RF-03:	Possibilitar que veterinários confirmem ou neguem agendamentos comunicando aos clientes.</li>
    </ul>
   </td>
-  <td> veterinários consigam vizualizar os agendamentos, podendo negar ou confirmar o agendamento.</td>
+  <td> Permitir aos profissionais a vizualização os agendamentos, podendo negar ou confirmar o mesmo.</td>
   <td>
    <ol>
     <li>Acessar o navegador.</li>
     <li>Informar o endereço do site.</li>
     <li>Visualizar a página Home.</li>
-    <li>logar na conta.</li>
-    <li>entrar em meus agendamentos</li>
-    <li>visualizar agendamentos feitos</li>
-    <li>clicar em "cancelar" ou "confirmar" </li>
+    <li>Logar na conta.</li>
+    <li>Entrar em meus agendamentos</li>
+    <li>Visualizar agendamentos feitos</li>
+    <li>Clicar em "cancelar" ou "confirmar" </li>
    </ol>
    </td>
   <td>realização do agendamento.</td>
@@ -277,38 +277,58 @@
   <td>CT-09: permitir o veterinario o controle de agendamentos</td>
   <td>
    <ul>
-    <li>RF-04:	O site deve possibilitar que veterinário,prescreva medicamentos logo após o atendimento presencial se necessário.</li>
+    <li>RF-04:	O site deve possibilitar que veterinário,prescreva medicamentos logo após o atendimento presencial.</li>
    </ul>
   </td>
-  <td> que o veterinário consiga prescrever medicação de forma online.</td>
+  <td> Permitir o veterinário a prescrever medicação e oferecer suporte após o atendimento de forma online.</td>
   <td>
    <ol>
     <li>Acessar o navegador.</li>
     <li>Informar o endereço do site.</li>
     <li>Visualizar a página Home.</li>
-    <li>logar na conta.</li>
-    <li>entrar em meus agendamentos</li>
-    <li>visualizar agendamentos concluidos</li>
-    <li>clicar em "prescrição" </li>
-    <li>digitar no local solicitado a prescrição</li>
-    <li>clicar em confirmar após escrever</li>
+    <li>Logar na conta.</li>
+    <li>Entrar em meus agendamentos</li>
+    <li>Visualizar agendamentos concluidos</li>
+    <li>Clicar em "prescrição" </li>
+    <li>Digitar no local solicitado a prescrição</li>
+    <li>Clicar em confirmar após escrever</li>
    </ol>
    </td>
-  <td>realização de prescrição.</td>
+  <td>realização de prescrição e suporte após o atendimento.</td>
   <td>Isabella</td>
  </tr>
 </table>
 
-
-
-## Ferramentas de Testes (Opcional)
-
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>  
+ </tr>
+ <tr>
+  <td>CT-10:Visualizar a área de prescrição</td>
+  <td>
+   <ul>
+    <li>RF-08:Prover suporte pós-atendimento, incluindo informações sobre posologia e prescrição.</li>
+   </ul>
+  </td>
+  <td> Permitir que o usuário tenha suporte e consiga visualizar a prescrição passada pelo profissional de forma online.</td>
+  <td>
+   <ol>
+    <li>Acessar o navegador.</li>
+    <li>Informar o endereço do site.</li>
+    <li>Visualizar a página Home.</li>
+    <li>Logar na conta.</li>
+    <li>Entrar em meus agendamentos</li>
+    <li>Visualizar agendamentos concluidos</li>
+    <li>Clicar no agendamento já realizado </li>
+    <li>Visualizar a prescrição realizada pelo profissional</li>
+   </ol>
+   </td>
+  <td>Conseguir acessar a área de prescrição.</td>
+  <td>Augusto</td>
+ </tr>
+</table>
