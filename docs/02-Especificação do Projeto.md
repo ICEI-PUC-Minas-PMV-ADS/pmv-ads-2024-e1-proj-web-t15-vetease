@@ -120,10 +120,10 @@
 |RF-03 |Possibilitar que veterinários confirmem ou neguem agendamentos comunicando aos clientes. |ALTA |
 |RF-04 |Habilitar veterinários a passar orientações e prescrições médicas de forma prática para os clientes. |ALTA |
 |RF-05 |Oferecer aos Tutores de animais um meio de realizar cadastro no aplicativo/site. |ALTA |
-|RF-06 |Permitir que Tutores de animais leiam informações sobre sintomas comuns, bem-estar e adestramento. |ALTA |
+|RF-06 |Permitir que Tutores de animais leiam dicas sobre bem-estar e adestramento. |ALTA |
 |RF-07 |Habilitar agendamento e cancelamento online de consultas, vacinações e procedimentos para pets. |ALTA |
 |RF-08 |Prover suporte pós-atendimento, incluindo informações sobre posologia e prescrição. |MÉDIA |
-|RF-09 |A aplicação deve oferecer uma funcionalidade de filtro/pesquisa de serviços para permitir ao usuário realizar o agendamento.|ALTA |
+|RF-09 |A aplicação deve oferecer uma funcionalidade de selecionar serviços para permitir ao usuário realizar o agendamento.|ALTA |
 |RF-10 |A aplicação deve permitir ao usuário atualizar as informações registradas no cadastro.|MEDIA |
 |RF-11 |A aplicação deve permitir que o usuário verifique detalhes sobre seus agendamentos|ALTA |
 |RF-12 |A aplicação deve permitir ao usuário visualizar uma sessão clara de FAQ e suporte ao usuário para dúvidas e problemas comuns.|BAIXA |
