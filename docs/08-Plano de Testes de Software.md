@@ -43,7 +43,7 @@
   <th>Responsável</th>
  </tr>
  <tr>
-  <td>CT-02: Verificar o funcionamento do filtro de pesquisa</td>
+  <td>CT-02: Verificar o funcionamento da seleção de serviço</td>
   <td>
    <ul>
     <li>RF-09:	A aplicação deve oferecer uma funcionalidade de selecionar serviços para permitir ao usuário realizar o agendamento.. </li>
