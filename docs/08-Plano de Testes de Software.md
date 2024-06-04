@@ -15,7 +15,7 @@
    <ul>
     <li>RF-01:	O site deve permitir o login do administrador da clínica veterinária.</li>
    <li>RF-05:	O site deve permitir aos tutores de animais um meio de realizar cadastro </li>
-   <li>RF-011:	O site deve permitir o login dos tutores.</li>
+   <li>RF-02:	O site deve permitir o login dos tutores.</li>
    </ul>
   </td>
   <td>Verificar se os links da página Home estão encaminhando para as respectivas páginas corretamente</td>
@@ -45,21 +45,20 @@
   <td>CT-02: Verificar o funcionamento do filtro de pesquisa</td>
   <td>
    <ul>
-    <li>RF-09:	O site deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário realizar o agendamento. </li>
-    <li>RF-06: Permitir que Tutores de animais pesquisem informações sobre sintomas comuns, bem-estar e adestramento.</li>
+    <li>RF-09:	A aplicação deve oferecer uma funcionalidade de selecionar serviços para permitir ao usuário realizar o agendamento.. </li>
    </ul>
   </td>
-  <td>Verificar se o filtro de pesquisa está recuperando os dados inseridos pelo usuário</td>
+  <td>Verificar se oa aplicação oferece uma funcionalidade de selecionar serviços. </td>
   <td>
    <ol>
     <li>Acessar o navegador.</li>
     <li>Informar o endereço do site.</li>
     <li>Visualizar a página Home.</li>
-    <li>Clicar barra de pesquisa.</li>
-    <li>Digitar no filtro de pesquisa o seviço ou a dúvida desejada e verificar se o resultado é exibido na página.</li>
+    <li>Logar/cadastrar na conta.</li>
+    <li>selecionar o serviço.</li>
    </ol>
    </td>
-  <td>Os dados inseridos no filtro de pesquisa devem mostrar serviços disponiveis e respostas para dúvidas.</td>
+  <td>os serviços devem ser selecionados.</td>
   <td>Augusto</td>
  </tr>
 </table>
@@ -77,8 +76,9 @@
   <td>CT-03: verificar se os usuários do aplicativo visualizam os próprios agendamentos e a sessão de FAQ.</td>
   <td>
    <ul>
-    <li>RF-02:	O site deve permitir a vizualização dos agendamentos.</li>
+    <li>RF-11:	O site deve permitir a vizualização dos agendamentos.</li>
     <li>RF-12: O site deve  permitir ao usuário visualizar uma sessão clara de FAQ e suporte ao usuário para dúvidas e problemas comuns. </li>
+    <li>RF6-: Permitir que tutores de animais leiam dicas sobre bem-estar e adestramento.</li>
    </ul>
   </td>
   <td>Verificar se todas as informações  estão disponíveis na página</td>
@@ -90,10 +90,11 @@
     <li>Realizar login ou cadastro.</li>
     <li>Clicar em meus agendamentos.</li>
     <li>Visualizar área de FAQ.</li>
+    <li>Visualizar área de bem-estar.</li>
     <li>Visualizar as informações referentes aos agendamentos disponíveis na página.</li>
    </ol>
    </td>
-  <td>Todas as informações dos agendamentos,e área do FAQ referentes suporte ao usuário para dúvidas estão disponíveis na página meus agendamentos.</td>
+  <td>Todas as informações dos agendamentos, vizualização da área de FAQ referentes suporte ao usuário para dúvidas,e dicas de bem-estar.</td>
   <td>Thiago</td>
  </tr>
 </table>
@@ -145,7 +146,7 @@
   <td>CT-05: Verificar o login de usuários</td>
   <td>
    <ul>
-   <li>RF-011: O site deve permitir ao usuário fazer o login da sua conta.</li>
+   <li>RF-02: O site deve permitir ao usuário fazer o login da sua conta.</li>
    <li>RF-01: o site deve permitir o login do administrador da clínica veterinária. </li>
    </ul>
   </td>
