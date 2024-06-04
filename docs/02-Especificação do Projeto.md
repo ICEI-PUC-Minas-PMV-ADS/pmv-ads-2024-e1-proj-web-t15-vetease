@@ -95,15 +95,15 @@
 
 |<p>**Eu como …** </p><p>**PERSONA** </p>|<p>**Eu como …** </p><p>**PERSONA** </p>|**… quero/desejo …**  <br>**FUNCIONALIDADE** |<p>**… para ....** </p><p>**MOTIVO/VALOR** </p>|
 | :-: | :-: | :-: | :-: |
-|H-01|administrador da clínica |Realizar meu login no aplicativo |para administrar meus serviços em um meio digital visando ampliar minha carteira de clientes |
-|H-02|Qualquer usuário da aplicação|Visualizar os meus agendamentos . |Acompanhar e interagir com esse registro  |
+|H-01|administrador da clínica |Realizar meu login no site |para administrar meus serviços em um meio digital visando ampliar minha carteira de clientes |
+|H-02|Tutor de animal |Realizar login no site . |Ter acesso as facilidades do agendamento e informações uteis ao bem estar do meu pet |
 |H-03|Médico Veterinário|Confirmar/Negar agendamentos de forma prática e comunicar quaisquer mudanças aos clientes |Manter a organização e a eficiência respeitando minha disponibilidade. |
 |H-04|Médico Veterinário|Passar de forma prática as orientações e prescrições médicas para os clientes |Garantir a clareza e a precisão das informações ao auxiliar o administrador do meu paciente. |
 |H-05|Tutor de animal de estimação |Realizar o meu cadastro no aplicativo |Ter acesso as facilidades do agendamento e informações uteis ao bem estar do meu pet |
-|H-06|Tutor de animal de estimação |pesquisar informações sobre sintomas comuns em animais de estimação e dicas de adestramento / bem-estar |que eu possa garantir a saúde e o bem-estar do meu animal de estimação. |
+|H-06|Tutor de animal de estimação |visualizar informações sobre bem-estar de animais de estimação e dicas de adestramento |que eu possa garantir a saúde e o bem-estar do meu animal de estimação. |
 |H-07|Tutor de animal de estimação |Agendar consultas para meu animal de forma simples e rápida |Garantir seu bem-estar sem complicações |
 |H-08|Tutor de animal de estimação |Receber suporte pós-atendimento como informações sobre cuidados e acompanhamento |Assegurar a recuperação do meu pet por meio de uma adequada posologia e cumprimento da prescrição |
-|H-09|Tutor de animal de estimação |pesquisar por servicos disponiveis|encontrar e realizar meu agendamento de forma ágil |
+|H-09|Tutor de animal de estimação |selecionar serviços convenientes disponiveis|encontrar e realizar meu agendamento de forma ágil |
 |H-10|Qualquer usuário da aplicação|atualizar minhas informacoes|mitigar possíveis erros e manter um cadastro atualizado |
 |H-11|Qualquer usuário da aplicação|Verificar detalhes sobre meus agendamentos|me manter a par de possíveis atualizações |
 |H-12|Tutor de animal de estimação |Consultar uma sessão clara de FAQ|facilitar a resolução de dúvidas/problemas mais frequentes   |
@@ -116,7 +116,7 @@
 |**ID** |**Descrição** |**Prioridade** |
 | :-: | :-: | :-: |
 |RF-01 |Permitir o login do administrador da clínica veterinária  |ALTA |
-|RF-02 |Possibilitar que os usuários do aplicativo visualizem os próprios agendamentos. |ALTA |
+|RF-02 |possibilitar o login dos tutores no site. |ALTA |
 |RF-03 |Possibilitar que veterinários confirmem ou neguem agendamentos comunicando aos clientes. |ALTA |
 |RF-04 |Habilitar veterinários a passar orientações e prescrições médicas de forma prática para os clientes. |ALTA |
 |RF-05 |Oferecer aos Tutores de animais um meio de realizar cadastro no aplicativo/site. |ALTA |
