@@ -5,7 +5,7 @@ CT-01: Verificar o funcionamento dos links da página Home
 Responsável: Isabella
 
 
-CT-02: Verificar o funcionamento do filtro de pesquisa
+CT-02: Verificar o funcionamento da seleção de serviço
 
 Responsável: Augusto César
 
