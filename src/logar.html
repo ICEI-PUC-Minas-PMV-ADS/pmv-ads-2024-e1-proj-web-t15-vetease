@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
   <title>VetEase</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
       
       <h3>Entrar</h3>
 
-      <form action="scripts.js">
+      <form action="scripts/scripts.js">
         <section> <!-- input de mail -->
           <label for="email">E-mail</label>
           <input type="email" name="email" placeholder="Digite seu e-mail">
@@ -29,7 +29,7 @@
           <p>*Obrigatório digitar uma senha correta</p>
         </section>
         
-        <button type="button" class="btn btn-submit" onclick="alert('logado na conta com sucesso')">Entrar</button> <!-- button -->
+        <button type="button" class="btn-submit" onclick="alert('logado na conta com sucesso')">Entrar</button> <!-- button -->
       </form>
 
       <div class="divider"> <!-- divider & text -->
@@ -38,7 +38,7 @@
         <hr />
       </div>
 
-      <button type="button" class="btn btn-create-account" id="form-submit" onclick="location.href = '/src/cadastro.html'">Criar conta</button> <!-- ir para criar conta -->
+      <button type="button" class="btn-create-account" id="form-submit" onclick="location.href = '/src/cadastro.html'">Criar conta</button> <!-- ir para criar conta -->
     </section>
     <section class="image-container"> <!-- foto section -->
       <img src="/src/assets/logar-image.png" alt="Background image">
