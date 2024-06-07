@@ -199,10 +199,53 @@
         <button class="confirm-button">Confirmar</button>
       </footer>
     </dialog>
+
+        <!-- Modal:: PerfilDialog -->
+        <dialog id="dialog">
+          <button class="dialog-close" onclick="closePerfilDialog()">&times;</button>
+          <div class="dialog-header">
+            <h2 id="dialog-title">Editar Perfil</h2>
+            <p id="dialog-description">Altere suas informações pessoais e confirme para validar</p>
+          </div>
+    
+          <div class="dialog-content">
+            <form>
+              <section>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+                <p>* Preencimento obrigatório</p>
+              </section>
+    
+              <section>
+                <label for="lastname">Sobrenome</label>
+              <input type="text" id="lastname" name="lastname" required>
+              <p>* Preencimento obrigatório</p>
+              </section>
+    
+              <section>
+              <label for="address">Endereço</label>
+              <input type="text" id="address" name="address" required>
+              <p>* Preencimento obrigatório</p>
+              </section>
+    
+              <section>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <p>* Preencimento obrigatório</p>
+              </section>
+            </form>
+          </div>
+          
+          <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p> -->
+          <footer class="dialog-footer">
+            <button class="cancel-button" onclick="closePerfilDialog()">Cancelar</button>
+            <button class="confirm-button">Confirmar</button>
+          </footer>
+        </dialog>
   </main>
   <script src="scripts/modal-agendamento.js"></script>
   <script src="scripts/services-render.js"></script>
-  
+  <script src="scripts/modal-perfil.js"></script>
 </body>
 
 </html>
