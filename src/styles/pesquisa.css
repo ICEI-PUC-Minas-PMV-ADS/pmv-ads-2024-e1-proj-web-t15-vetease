@@ -181,6 +181,20 @@ main {
             color: #51926B;
             text-align: start;
           }
+
+          h6.cancelled {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: red;
+            text-align: start;
+          }
+
+          h6.waiting {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #A1A1AA;
+            text-align: start;
+          }
         }
       }
     }

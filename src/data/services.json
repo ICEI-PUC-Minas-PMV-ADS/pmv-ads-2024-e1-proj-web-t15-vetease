@@ -5,14 +5,16 @@
         "title": "Exames de Rotina",
         "description": "Verificações periódicas que incluem exames de sangue, urina e fezes, além de avaliações físicas. Esses exames ajudam a detectar problemas de saúde precocemente.",
         "doctor": "Dr. João da Silva",
-        "price": "R$ 150,00"
+        "price": "R$ 150,00",
+        "status": "waiting"
     },
     {
         "imgSrc": "/src/assets/search/servico-b.png",
         "title": "Cirurgias",
         "description": "Procedimentos que variam desde a castração até cirurgias ortopédicas e de emergência. As cirurgias são realizadas para tratar diversas condições de saúde e melhorar a qualidade de vida do pet.",
         "doctor": "Dra. Maria dos Santos",
-        "price": "R$ 500,00"
+        "price": "R$ 500,00",
+        "status": "cancelled"
     },
     {
         "imgSrc": "/src/assets/search/servico-c.png",
