@@ -195,7 +195,7 @@ Acesse a tela de meus agendamentos e depois que for repassado a prescrição e t
 
 ### Agendamento
 
-Responsável:
+Responsável: Thiago
 
 O acesso a tela de pesquisa poderá ser feito através do botão "Confirmar". Estrutura baseada em HTML, CSS e JS
 
