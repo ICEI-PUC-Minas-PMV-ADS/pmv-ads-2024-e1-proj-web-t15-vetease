@@ -17,9 +17,6 @@ Exemplo:
 
 #### Artefatos da funcionalidade
 
-●
-
-●
 
 #### Estrutura de Dados
 
@@ -43,16 +40,13 @@ O acesso a tela de cadastro poderá ser feito através do botão "Criar conta"  
 
 Exemplo:![logar](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj-web-t15-vetease/assets/166762561/a9e2aac4-44b2-45d7-a3b5-61ccac161477)
 
+#### Estrutura de Dados
 
-#### Artesfatos de Funionalidade
-
-●
-
-●
+RF-02	Possibilitar o login dos tutores no site
 
 #### Estrutura de Dados
 
-●
+● logar.html
 
 #### Instruções de acesso
 
@@ -69,13 +63,11 @@ Exemplo:![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj-
 
 #### Artesfatos de Funionalidade
 
-●
-
-●
+● 
 
 #### Estrutura de Dados
 
-●
+● cadastro.html
 
 #### Instruções de acesso
 
