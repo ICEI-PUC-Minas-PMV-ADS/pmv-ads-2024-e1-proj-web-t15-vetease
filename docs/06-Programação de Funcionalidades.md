@@ -158,8 +158,6 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 ● RF-11	A aplicação deve permitir que o usuário verifique detalhes sobre seus agendamentos
 
-● RF-08	Prover suporte pós-atendimento, incluindo informações sobre posologia e prescrição.
-
 #### Estrutura de Dados
 
 ● meus-agendamentos.html
@@ -182,7 +180,7 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 #### Artesfatos de Funionalidade
 
-●
+● RF-08	Prover suporte pós-atendimento, incluindo informações sobre posologia e prescrição.
 
 #### Estrutura de Dados
 
