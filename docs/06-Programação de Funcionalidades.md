@@ -247,6 +247,9 @@ Responsável: Augusto e Isabelle
 
 O acesso a tela de Controle de agendamentos poderá ser feita através do botão "Confirmar". Estrutura baseada em HTML, CSS e JS
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj-web-t15-vetease/assets/166762561/9e1bffa7-6698-4842-ace9-c5f8491e7561)
+
+
 #### Artesfatos de Funionalidade
 
 ● RF-04	Habilitar veterinários a passar orientações e prescrições médicas de forma prática para os clientes.
