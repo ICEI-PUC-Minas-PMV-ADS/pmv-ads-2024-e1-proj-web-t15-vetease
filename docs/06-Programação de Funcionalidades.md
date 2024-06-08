@@ -5,18 +5,13 @@
 
 ### Home page
 
-Responsável:
+Responsável: Thiago
 
 O acesso a tela de cadastro poderá ser feito através do botão de "Criar conta" e o acesso a tela de login poderá ser feito através do botão de "Logar". Ambas estruturas baseadas em HTML, CSS e JS.
 
 Exemplo:
 
 ![site](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj-web-t15-vetease/assets/166762561/25bb50ac-a752-4c0f-b088-b1137c0d5295)
-
-
-
-#### Artefatos da funcionalidade
-
 
 #### Estrutura de Dados
 
@@ -34,7 +29,7 @@ Após esse processo será aberto a tela inicial do site.
 
 ### Login
 
-Responsável:
+Responsável: Thiago
 
 O acesso a tela de cadastro poderá ser feito através do botão "Criar conta"  e o acesso da tela de pesquisa poderá ser feito através do botão "Entrar". Ambas estruturas baseadas em HTML, CSS e JS.
 
@@ -50,12 +45,14 @@ RF-02	Possibilitar o login dos tutores no site
 
 #### Instruções de acesso
 
+Acesse a tela inicial do site e clique botão "Logar".
+
 <hr>
 
 
 ### Cadastro
 
-Responsável:
+Responsável: Beatriz e Eduardo
 
 O acesso a tela de completar cadastro poderá ser feito através do botão "Criar Conta". Estrutura baseada em HTML, CSS e JS.
 
@@ -71,12 +68,14 @@ Exemplo:![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj-
 
 #### Instruções de acesso
 
+Acesse a tela inicial do site ou a tela de login e clique no botão "Criar Conta".
+
 <hr>
 
 
 ### Completar cadastro
 
-Responsável:
+Responsável: Augusto e Isabella
 
 O acesso a tela de pesquisa poderá ser feito através do botão "Confirmar dados". Estrutura baseada em HTML, CSS e JS.
 
@@ -86,20 +85,20 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 ●
 
-●
-
 #### Estrutura de Dados
 
-●
+● completar-cadastro.html
 
 #### Instruções de acesso
+
+Acesse a tela de cadastro, complete seus dados e aperte o botão "Criar Conta".
 
 <hr>
 
 
 ### Pesquisa
 
-Responsável:
+Responsável: Thiago
 
 O acesso a tela de perfil poderá ser feito através do botão "Perfil", o acesso a tela de meus agendamentos poderá ser feito através do botão "Meus atendimentos" e o acesso a tela de agendamentos poderá ser feito através de qualquer botão "Agendar". Todas estruturas baseadas em HTML, CSS E JS.
 
@@ -107,22 +106,24 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 #### Artesfatos de Funionalidade
 
-●
+● RF-12	A aplicação deve permitir ao usuário visualizar uma sessão clara de FAQ e suporte ao usuário para dúvidas e problemas comuns.
 
-●
+● RF- 07 Habilitar agendamento e cancelamento online de consultas, vacinações e procedimentos para pets.
 
 #### Estrutura de Dados
 
-●
+● pesquisa.html
 
 #### Instruções de acesso
+
+Abra a tela de login, complete com seus dados e aparte o botão "Entrar" ou acesse a tela de completar cadastro e aprte o botão "Confirmar Dados"
 
 <hr>
 
 
 ### Perfil
 
-Responsável:
+Responsável: Beatriz e Eduardo
 
 O acesso a tela de pesquisa poderá ser feito através do botão "Pesquisa". Estrutura baseada em HTML, CSS e JS.
 
@@ -130,22 +131,22 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 #### Artesfatos de Funionalidade
 
-●
-
-●
+● RF-10	A aplicação deve permitir ao usuário atualizar as informações registradas no cadastro.
 
 #### Estrutura de Dados
 
-●
+● pesquisa.html
 
 #### Instruções de acesso
+
+Acesse a tela de perfil e aprte o botão "Perfil"
 
 <hr>
 
 
 ### Meus agendamentos
 
-Responsável:
+Responsável: Beatriz e Eduardo
 
 O acesso a tela de ver prescrição poderá ser feito através do botão "Ver tratamento". Estrutura baseada em HTML, CSS e JS.
 
@@ -153,22 +154,27 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 #### Artesfatos de Funionalidade
 
-●
+● RF-12	A aplicação deve permitir ao usuário visualizar uma sessão clara de FAQ e suporte ao usuário para dúvidas e problemas comuns.
 
-●
+● RF-11	A aplicação deve permitir que o usuário verifique detalhes sobre seus agendamentos
+
+● RF-08	Prover suporte pós-atendimento, incluindo informações sobre posologia e prescrição.
 
 #### Estrutura de Dados
 
-●
+● meus-agendamentos.html
 
 #### Instruções de acesso
+
+Acesse a tela de pesquisa e aperte o botão "Meus agendamentos"
+
 
 <hr>
 
 
 ### Ver prescrição
 
-Responsável:
+Responsável: Augusto e Isabella
 
 O acesso a tela de pesquisa poderá ser feito através do botão "x". Estrutura baseada em HTML, CSS e JS
 
@@ -178,13 +184,13 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 ●
 
-●
-
 #### Estrutura de Dados
 
-●
+● 
 
 #### Instruções de acesso
+
+Acesse a tela de meus agendamentos e depois que for repassado a prescrição e tiver sido atendido aprte o botão "Ver Tratamento".
 
 <hr>
 
@@ -199,22 +205,23 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 #### Artesfatos de Funionalidade
 
-●
+● RF-09	A aplicação deve oferecer uma funcionalidade de selecionar serviços para permitir ao usuário realizar o agendamento.
 
-●
 
 #### Estrutura de Dados
 
-●
+● agendamento.html
 
 #### Instruções de acesso
+
+Acesse a tela de pesquisa e aperte o botão "Agendar"
 
 <hr>
 
 
 ### Controle de agendamentos
 
-Responsável:
+Responsável: Augusto e Isabelle
 
 Estrutura baseada em HTML, CSS e JS
 
@@ -222,15 +229,15 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 #### Artesfatos de Funionalidade
 
-●
-
-●
+●  RF-03 Possibilitar que veterinários confirmem ou neguem agendamentos comunicando aos clientes.
 
 #### Estrutura de Dados
 
 ●
 
 #### Instruções de acesso
+
+Depois de cadastrado a acessado o site o administrador poderá visualizar os seus agendamentos.
 
 <hr>
 
@@ -238,21 +245,21 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 ### Cadastro de prescrição
 
-Responsável:
+Responsável: Augusto e Isabelle
 
 O acesso a tela de Controle de agendamentos poderá ser feita através do botão "Confirmar". Estrutura baseada em HTML, CSS e JS
 
 #### Artesfatos de Funionalidade
 
-●
-
-●
+● RF-04	Habilitar veterinários a passar orientações e prescrições médicas de forma prática para os clientes.
 
 #### Estrutura de Dados
 
 ●
 
 #### Instruções de acesso
+
+Acesse a tela de controle de agendamentos e aperte o botão "Prescrição"
 
 <hr>
 
