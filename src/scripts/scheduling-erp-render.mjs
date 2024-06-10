@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('scheduling-erp-container');
     const template = document.getElementById('scheduling-erp-template');
 
-    schedules.forEach((schedule, index) => {
+    schedules.forEach((schedule) => {
         const clone = template.content.cloneNode(true);
-        // const img = clone.querySelector('img');
-        
-        
+                
         const title = clone.querySelector('.scheduling-info h3');
         const description = clone.querySelector('.scheduling-info p');
-        const button = clone.querySelector('.scheduling-info button');
+        const buttonCancel = clone.querySelector('#btn-cancel');
+        const buttonConfirm = clone.querySelector('#btn-confirm');
+        const buttonPrescricao = clone.querySelector('#btn-prescerver');
 
         const status = clone.querySelector('.scheduling-detail h5');
         const day = clone.querySelector('.scheduling-detail p');
@@ -23,20 +23,33 @@ document.addEventListener('DOMContentLoaded', () => {
             status.className = "cancelled"
             status.innerText = "Cancelado"
 
-            button.style = "background-color: transparent; color: #626262; border: 1px solid #626262; cursor: not-allowed;";
-            button.setAttribute('disabled', 'true');
+            buttonPrescricao.style = "display:none;"
+
+            buttonConfirm.style = "background-color: transparent; color: #626262; border: 1px solid #626262; cursor: not-allowed;";
+            buttonConfirm.setAttribute('disabled', 'true');
+
+            buttonCancel.style = "background-color: transparent; color: #626262; border: 1px solid #626262; cursor: not-allowed;";
+            buttonCancel.setAttribute('disabled', 'true');
         } else if (schedule.status === "pending") {
             status.className = "pending"
-            status.innerText = "Agendado"
+            status.innerText = "Aguardando"
 
-            button.style = "background-color: #a8c8b5; color: #fff; border: 1px solid #a8c8b5; cursor: default;";
-            button.setAttribute('disabled', 'false');
+            buttonConfirm.setAttribute('onclick', `showPrescricaoDialog('${schedule.title}')`);
+
+            buttonPrescricao.style = "display:none;"
+            buttonConfirm.setAttribute('disabled', 'false');
         } else {
-            status.className = "confirmed"
-            status.innerText = "Atendido"
-            }
+            status.innerText = ""
+
+            buttonConfirm.style = "background-color: transparent; color: #626262; border: 1px solid #626262; cursor: not-allowed;";
+            buttonConfirm.setAttribute('disabled', 'true');
             
-        button.setAttribute('onclick', `showPrescricaoDialog('${schedule.title}')`);
+            buttonCancel.style = "background-color: transparent; color: #626262; border: 1px solid #626262; cursor: not-allowed;";
+            buttonCancel.setAttribute('disabled', 'true');
+            
+        }
+            
+        buttonPrescricao.setAttribute('onclick', `showPrescreverDialog()`);
         const dateList= {seg: 'Segunda-Feira', terc: 'Terça-Feira', quart: 'Quarta-Feira', qui: 'Quinta-Feira', sex: 'Sexta-Feira', sab: 'Sábado', dom: 'Domingo'}
 
         title.textContent = schedule.service;
