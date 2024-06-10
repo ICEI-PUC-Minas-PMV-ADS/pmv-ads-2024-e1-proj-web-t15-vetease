@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=divince-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>VetEase</title>
+    <script type="module" src="scripts/auth-register.mjs" defer></script>
+    <title>VetEase - Cadastro</title>
 </head>
 <body>
     <main>
@@ -17,16 +18,16 @@
        
             <h3>Criar</h3>
 
-             <form action="/src/completar-cadastro.html">
+             <form id="registerForm">
                 <section> <!-- input de mail -->
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" placeholder="Digite seu email">
+                    <label for="register-email">E-mail</label>
+                    <input id="register-email" type="email" name="register-email" placeholder="Digite seu email">
                     <p>* Digite um e-mail válido!</p>
                 </section>
                 
                 <section> <!-- input de senha -->
-                    <label for="password">Senha</label>
-                    <input type="password" name="password" placeholder="Sua senha aqui">
+                    <label for="register-password">Senha</label>
+                    <input id="register-password" type="password" name="register-password" placeholder="Sua senha aqui">
                     <p>*Obrigatório digitar uma senha válida</p>
                 </section>
                 
@@ -38,7 +39,7 @@
                 <hr />
             </div>
 
-            <button type="button" class="btn-create-account" onclick="location.href='/src/index.html'">Entrar</a> 
+            <button type="button" class="btn-create-account" onclick="location.href='/src/logar.html'">Entrar</a> 
         </section>
 
         <section class="image-container"><!-- foto section -->
@@ -46,6 +47,7 @@
             <div></div>
         </section>
     </main>
+    <script type="module" src="scripts/load-user-db.mjs"></script>
 </body>
 
 </html>

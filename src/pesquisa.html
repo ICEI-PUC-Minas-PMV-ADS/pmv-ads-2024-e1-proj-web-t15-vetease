@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="stylesheet" href="styles/pesquisa.css" />
-  <title>VetEase</title>
+  <script type="module" src="scripts/auth-user-profile.mjs"></script>
+  <title>VetEase - Pesquisa</title>
 </head>
 
 <body>
@@ -16,8 +17,8 @@
       <h1><span>Vet</span>Ease</h1>
     </div>
     <nav>
-      <a>Perfil</a>
-      <a>Meus atendimentos</a>
+      <a onclick="showPerfilDialog()">Perfil</a>
+      <a onclick="routerPush('meus-agendamentos')">Meus Agendamentos</a>
     </nav>
   </header>
   <main>
@@ -33,7 +34,7 @@
               <polyline points="160 208 80 128 160 48" fill="none" stroke="currentColor" stroke-linecap="round"
                 stroke-linejoin="round" stroke-width="16" />
             </svg>
-            <h3>Início</h3>
+            <h3>Sair</h3>
           </a>
         </div>
         <div>
@@ -140,8 +141,6 @@
       </template>
     </section>
 
-
-
     <!-- Modal::Dialog -->
     <dialog id="dialog">
       <button class="dialog-close" onclick="closeDialog()">&times;</button>
@@ -151,28 +150,30 @@
       </div>
 
       <div class="dialog-content">
-        <form>
+        <form id="formScheduling" method="post">
+          <input type="text" id="service-input" name="service" style="display: none;">
+          <input type="text" id="doctor-input" name="doctor" style="display: none;">
           <section>
-            <label for="name-pet">Nome do pet</label>
-            <input type="text" id="name" name="name" required>
+            <label for="petName">Nome do pet</label>
+            <input type="text" id="petName" name="name" required>
             <p>* Preencimento obrigatório</p>
           </section>
 
           <section>
             <label for="weight">Peso</label>
-          <input type="text" id="weight" name="weight" required>
-          <p>* Preencimento obrigatório</p>
+            <input type="text" id="weight" name="weight" required>
+            <p>* Preencimento obrigatório</p>
           </section>
 
           <section>
-          <label for="race">Raça</label>
-          <input type="text" id="race" name="race" required>
-          <p>* Preencimento obrigatório</p>
+            <label for="race">Raça</label>
+            <input type="text" id="race" name="race" required>
+            <p>* Preencimento obrigatório</p>
           </section>
 
           <section>
-            <label for="observations">Observações</label>
-            <textarea id="observations" name="observations" rows="4" required></textarea>
+            <label for="description">Observações</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
             <p class="muted-p">Seja o mais detalhista possível.</p>
           </section>
 
@@ -190,62 +191,67 @@
               <label for="quart">Sexta-feira</label>
             </div>
           </section>
+          <footer class="dialog-footer">
+            <button class="cancel-button" onclick="closeDialog()">Cancelar</button>
+            <button type="submit" class="confirm-button">Confirmar</button>
+          </footer>
         </form>
       </div>
-      
-      <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p> -->
-      <footer class="dialog-footer">
-        <button class="cancel-button" onclick="closeDialog()">Cancelar</button>
-        <button class="confirm-button">Confirmar</button>
-      </footer>
+
     </dialog>
 
-        <!-- Modal:: PerfilDialog -->
-        <dialog id="dialog">
-          <button class="dialog-close" onclick="closePerfilDialog()">&times;</button>
-          <div class="dialog-header">
-            <h2 id="dialog-title">Editar Perfil</h2>
-            <p id="dialog-description">Altere suas informações pessoais e confirme para validar</p>
-          </div>
-    
-          <div class="dialog-content">
-            <form>
-              <section>
-                <label for="name">Nome</label>
-                <input type="text" id="name" name="name" required>
-                <p>* Preencimento obrigatório</p>
-              </section>
-    
-              <section>
-                <label for="lastname">Sobrenome</label>
-              <input type="text" id="lastname" name="lastname" required>
-              <p>* Preencimento obrigatório</p>
-              </section>
-    
-              <section>
-              <label for="address">Endereço</label>
-              <input type="text" id="address" name="address" required>
-              <p>* Preencimento obrigatório</p>
-              </section>
-    
-              <section>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <p>* Preencimento obrigatório</p>
-              </section>
-            </form>
-          </div>
-          
-          <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p> -->
+    <!-- Modal:: PerfilDialog -->
+    <dialog id="perfil-dialog">
+      <button class="dialog-close" onclick="closePerfilDialog()">&times;</button>
+      <div class="dialog-header">
+        <h2 id="dialog-title">Editar Perfil</h2>
+        <p id="dialog-description">Altere suas informações pessoais e confirme para validar</p>
+      </div>
+
+      <div class="dialog-content">
+        <form id="profileForm">
+          <section>
+            <label for="name">Nome</label>
+            <input type="text" id="profile-name" name="name" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="surname">Sobrenome</label>
+            <input type="text" id="profile-surname" name="surname" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="address">Endereço</label>
+            <input type="text" id="profile-address" name="address" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="email">Email</label>
+            <input type="email" id="profile-email" name="email" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
           <footer class="dialog-footer">
             <button class="cancel-button" onclick="closePerfilDialog()">Cancelar</button>
-            <button class="confirm-button">Confirmar</button>
+            <button type="submit" class="confirm-button">Confirmar</button>
           </footer>
-        </dialog>
+        </form>
+      </div>
+
+      <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p> -->
+
+    </dialog>
   </main>
   <script src="scripts/modal-agendamento.js"></script>
   <script src="scripts/services-render.js"></script>
   <script src="scripts/modal-perfil.js"></script>
+  <script src="scripts/scripts.js"></script>
+  <script type="module" src="scripts/router.mjs"></script>
+  <script type="module" src="scripts/load-user-db.mjs"></script>
+  <script type="module" src="scripts/load-schedule-db.mjs"></script>
+  <script type="module" src="scripts/scheduling.mjs"></script>
 </body>
 
 </html>

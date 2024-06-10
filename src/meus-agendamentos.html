@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
-<head> style type="text/css">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/styles.css" />
-  <link rel="stylesheet" href="styles/pesquisa.css" />
-  <title>VetEase</title>
+  <link rel="stylesheet" href="styles/meus-agendamentos.css" />
+  <title>VetEase - Agendamentos</title>
 </head>
 
 <body>
@@ -16,24 +16,24 @@
       <h1><span>Vet</span>Ease</h1>
     </div>
     <nav>
-      <a>Perfil</a>
-      <a>Meus agendamento</a>
+      <a onclick="showPerfilDialog()">Perfil</a>
+      <a class="btn-active" id="atual-router-btn">Meus Agendamentos</a>
     </nav>
   </header>
   <main>
     <section>
-      <h2>Meus Agendamentos</h2>
+      <h2>Meus agendamentos</h2>
     </section>
     <section class="container">
       <aside>
         <div>
-          <a href="#>
+          <a onclick="routerPush('pesquisa')">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
               <rect width="256" height="256" fill="none" />
               <polyline points="160 208 80 128 160 48" fill="none" stroke="currentColor" stroke-linecap="round"
                 stroke-linejoin="round" stroke-width="16" />
             </svg>
-            <h3>Início</h3>
+            <h3>Pesquisa</h3>
           </a>
         </div>
         <div>
@@ -116,37 +116,36 @@
           </section>
         </div>
       </aside>
-      <section class="search-container" id="search-container">
-      </section>
-
-      <template id="service-template">
+      <section class="search-container" id="scheduling-container"></section>
+      
+      <template id="scheduling-template">
         <article>
           <img src="" alt="">
-
-          <section class="service-info">
+  
+          <section class="scheduling-info">
             <h3></h3>
             <p></p>
-            <button type="button" class="btn-submit" onclick="showDialog('')">Ver Tratamento</button>
+            <button type="button" class="btn-submit">Ver Tratamento</button>
           </section>
-
+  
           <hr class="divider" />
-
-          <section class="service-detail">
-            <h3>Nome do profissional</h3>
-            <p>Segunda-Feira</p>
-            <h5>Confirmado</h5>
+  
+          <section class="scheduling-detail">
+            <h3> - Nome do profissional - </h3>
+            <p> - Dia - </p>
+            <h5> - Status - </h5>
           </section>
 
                 <template id="service-template">
         <article>
           <img src="" alt="">
-
-          <section class="service-info">
+  
+          <section class="scheduling-info">
             <h3></h3>
             <p></p>
-            <button type="button" class="btn-submit" onclick="showDialog('')">Ver Tratamento</button>
+            <button type="button" class="btn-submit">Ver Tratamento</button>
           </section>
-
+  
           <hr class="divider" />
 
           <section class="service-detail">
@@ -176,4 +175,70 @@
       </template>
     </section>
 
+    
 
+    <!-- Modal:: PerfilDialog -->
+    <dialog id="perfil-dialog">
+      <button class="dialog-close" onclick="closePerfilDialog()">&times;</button>
+      <div class="dialog-header">
+        <h2 id="dialog-title">Editar Perfil</h2>
+        <p id="dialog-description">Altere suas informações pessoais e confirme para validar</p>
+      </div>
+
+      <div class="dialog-content">
+        <form id="profileForm">
+          <section>
+            <label for="name">Nome</label>
+            <input type="text" id="profile-name" name="name" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="surname">Sobrenome</label>
+            <input type="text" id="profile-surname" name="surname" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="address">Endereço</label>
+            <input type="text" id="profile-address" name="address" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="email">Email</label>
+            <input type="email" id="profile-email" name="email" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+          <footer class="dialog-footer">
+            <button class="cancel-button" onclick="closePerfilDialog()">Cancelar</button>
+            <button type="submit" class="confirm-button">Confirmar</button>
+          </footer>
+        </form>
+      </div>
+    </dialog>
+
+    <dialog id="prescricao-dialog">
+      <button class="dialog-close" onclick="closePrescricaoDialog()">&times;</button>
+      <div class="dialog-header">
+        <h2 id="dialog-prescricao-title"></h2>
+        <p id="dialog-prescricao-description"></p>
+      </div>
+
+      <div class="dialog-content">
+        <p id="dialog-prescricao"></p>
+      </div>
+    </dialog>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/modal-perfil.js"></script>
+    <script type="module" src="scripts/modal-prescricao.mjs"></script>
+    <script type="module" src="scripts/scheduling-render.mjs"></script>
+    <script type="module" src="scripts/router.mjs"></script>
+    <script type="module" src="scripts/load-user-db.mjs"></script>
+    <script type="module" src="scripts/load-schedule-db.mjs"></script>
+
+  </main>
+</body>
+
+</html>
