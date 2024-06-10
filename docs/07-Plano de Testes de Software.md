@@ -94,7 +94,7 @@
     <li>Visualizar as informações referentes aos agendamentos disponíveis na página.</li>
    </ol>
    </td>
-  <td>Todas as informações dos agendamentos, vizualização da área de FAQ referentes suporte ao usuário para dúvidas,e dicas de bem-estar.</td>
+  <td>Todas as informações dos agendamentos, vizualização da área de FAQ,e dicas de bem-estar.</td>
   <td>Thiago</td>
  </tr>
 </table>
