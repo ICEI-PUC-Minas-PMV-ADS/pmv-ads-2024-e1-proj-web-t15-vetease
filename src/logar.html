@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script type="module" src="scripts/auth-login.mjs" defer></script>
+  <title>VetEase - Logar</title>
+</head>
+<body>
+  <main>
+    <section class="login-container"> <!-- form section -->
+      <div> <!-- logo text -->
+        <h1><span>Vet</span>Ease</h1>
+      </div>
+      
+      <h3>Entrar</h3>
+
+      <form id="loginForm" method="post">
+        <section> <!-- input de mail -->
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+          <p>* Digite um e-mail válido!</p>
+        </section>
+        
+        <section> <!-- input de senha -->
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" placeholder="Sua senha aqui" required>
+          <p>*Obrigatório digitar uma senha correta</p>
+        </section>
+        
+        <button type="submit" class="btn-submit">Entrar</button> <!-- button -->
+      </form>
+
+      <div class="divider"> <!-- divider & text -->
+        <hr />
+        <p>Ou crie sua conta para ajudar seu pet</p>
+        <hr />
+      </div>
+
+      <button type="button" class="btn-create-account" id="form-submit" onclick="location.href = '/src/cadastro.html'">Criar conta</button> <!-- ir para criar conta -->
+    </section>
+    <section class="image-container"> <!-- foto section -->
+      <img src="/src/assets/logar-image.png" alt="Background image">
+      <div></div>
+    </section>
+  </main>
+  <script type="module" src="scripts/load-user-db.mjs"></script>
+</body>
+</html>

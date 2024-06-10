@@ -1,5 +1,6 @@
 # Plano de Testes de Software
 
+
 <table>
  <tr>
   <th>Caso de teste</th>
@@ -94,7 +95,7 @@
     <li>Visualizar as informações referentes aos agendamentos disponíveis na página.</li>
    </ol>
    </td>
-  <td>Todas as informações dos agendamentos, vizualização da área de FAQ,e dicas de bem-estar.</td>
+  <td>Todas as informações dos agendamentos, vizualização da área de FAQ  para dúvidas,e dicas de bem-estar.</td>
   <td>Thiago</td>
  </tr>
 </table>

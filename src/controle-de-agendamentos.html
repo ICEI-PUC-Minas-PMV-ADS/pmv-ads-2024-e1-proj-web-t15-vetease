@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/pesquisa.css" />
+  <link rel="stylesheet" href="styles/controle-de-agendamentos.css" />
+  <title>VetEase</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1><span>Vet</span>Ease</h1>
+    </div>
+    <nav>
+      <a onclick="routerPush('logar')">Sair</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Controle de agendamentos</h2>
+    </section>
+    <section class="container">
+
+      <section class="search-container" id="scheduling-erp-container">
+      </section>
+
+      <template id="scheduling-erp-template">
+        <article>
+          <section class="scheduling-info">
+            <h3></h3>
+            <p></p>
+            <div>
+              <button type="button" class="btn-submit btn-cancel" id="btn-cancel" onclick="confirm(`Tem certeza que quer cancelar?`)">Cancelar</button>
+              <button type="button" class="btn-submit" id="btn-confirm" onclick="confirm(`Tem certeza que quer confirmar?`)">Confirmar</button>
+            </div>
+
+          </section>
+
+          <hr class="divider" />
+
+          <section class="scheduling-detail">
+            <h3>Nome do profissional</h3>
+            <p>Segunda-Feira</p>
+            <h5>Confirmado</h5>
+            <button type="button" class="btn-submit" id="btn-prescerver" style="width: 100%;">Prescrição</button></div>
+          </section>
+        </article>
+      </template>
+    </section>
+
+    <dialog id="dialog-prescrever">
+      <button class="dialog-close" onclick="closePrescricaoDialog()">&times;</button>
+      <div class="dialog-header">
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-description"></p>
+      </div>
+
+      <div class="dialog-content">
+        <form id="formPrescrever" method="post">
+          <input type="text" id="service-input" name="service" style="display: none;">
+          <input type="text" id="doctor-input" name="doctor" style="display: none;">
+         
+
+          <section>
+            <label for="prescricao">Prescrição</label>
+            <textarea id="prescricao" name="prescricao" rows="4" required></textarea>
+            <p class="muted-p">Seja o mais detalhista possível.</p>
+          </section>
+
+         
+          <footer class="dialog-footer">
+            <button class="cancel-button" onclick="closePrescricaoDialog()">Cancelar</button>
+            <button type="submit" class="confirm-button">Confirmar</button>
+          </footer>
+        </form>
+      </div>
+
+    </dialog>
+  </main>
+  <script type="module" src="scripts/router.mjs"></script>
+  <script type="module" src="scripts/scheduling-erp-render.mjs"></script>
+  <script type="module" src="scripts/modal-prescrever.mjs"></script>
+  <script type="module" src="scripts/load-user-db.mjs"></script>
+  <script type="module" src="scripts/load-schedule-db.mjs"></script>
+</body>
+
+</html>

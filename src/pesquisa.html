@@ -1,17 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>VetEase</title>
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/pesquisa.css" />
+  <script type="module" src="scripts/auth-user-profile.mjs"></script>
+  <title>VetEase - Pesquisa</title>
 </head>
+
 <body>
-  <main>
-    <div style="display: flex; width: fit-content; margin: auto;">
-      <h1>Em construção!</h1>
+  <header>
+    <div>
+      <h1><span>Vet</span>Ease</h1>
     </div>
+    <nav>
+      <a onclick="showPerfilDialog()">Perfil</a>
+      <a onclick="routerPush('meus-agendamentos')">Meus Agendamentos</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Pesquisa</h2>
+    </section>
+    <section class="container">
+      <aside>
+        <div>
+          <a onclick="routerPush('logar')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+              <rect width="256" height="256" fill="none" />
+              <polyline points="160 208 80 128 160 48" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16" />
+            </svg>
+            <h3>Sair</h3>
+          </a>
+        </div>
+        <div>
+          <header>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+              <rect width="256" height="256" fill="none" />
+              <polyline points="32 136 72 136 88 112 120 160 136 136 160 136" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
+              <path
+                d="M24,104c0-.67,0-1.33,0-2A54,54,0,0,1,78,48c22.59,0,41.94,12.31,50,32,8.06-19.69,27.41-32,50-32a54,54,0,0,1,54,54c0,66-104,122-104,122s-42-22.6-72.58-56"
+                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
+            </svg>
+
+            <h3>Dicas de bem estar</h3>
+          </header>
+          <section>
+            <details>
+              <summary>Exercício Regular<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                  <rect width="256" height="256" fill="none" />
+                  <polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="16" />
+                </svg></summary>
+              <p>Caminhadas diárias e brincadeiras mantêm seu pet saudável e feliz.</p>
+            </details>
+            <details>
+              <summary>Dieta Balanceada<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                  <rect width="256" height="256" fill="none" />
+                  <polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="16" />
+                </svg></summary>
+              <p>Alimente seu pet com rações de qualidade e evite comida humana.</p>
+            </details>
+            <details>
+              <summary>Visitas ao Veterinário<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                  <rect width="256" height="256" fill="none" />
+                  <polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="16" />
+                </svg></summary>
+              <p>Consultas regulares garantem prevenção e tratamento de doenças.</p>
+            </details>
+          </section>
+        </div>
+        <div>
+          <header>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+              <rect width="256" height="256" fill="none" />
+              <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16" />
+              <path d="M120,120a8,8,0,0,1,8,8v40a8,8,0,0,0,8,8" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16" />
+              <circle cx="124" cy="84" r="12" />
+            </svg>
+            <h3>FAQ</h3>
+          </header>
+          <section>
+            <details>
+              <summary>Como agendar uma consulta?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                  <rect width="256" height="256" fill="none" />
+                  <polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="16" />
+                </svg></summary>
+              <p>Clique no botão verde de agendar e preencha o formulário.</p>
+            </details>
+            <details>
+              <summary>Quais informações são necessárias?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                  <rect width="256" height="256" fill="none" />
+                  <polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="16" />
+                </svg></summary>
+              <p>Não se preocupe, são poucos dados para conseguir agendar.</p>
+            </details>
+            <details>
+              <summary>Posso cancelar ou remarcar?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                  <rect width="256" height="256" fill="none" />
+                  <polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="16" />
+                </svg></summary>
+              <p>Para cancelar você precisa ligar para o SAC.</p>
+            </details>
+          </section>
+        </div>
+      </aside>
+      <section class="search-container" id="search-container">
+      </section>
+
+      <template id="service-template">
+        <article>
+          <img src="" alt="">
+
+          <section class="service-info">
+            <h3></h3>
+            <p></p>
+            <button type="button" class="btn-submit" onclick="showDialog('')">Agendar</button>
+          </section>
+
+          <hr class="divider" />
+
+          <section class="service-detail">
+            <h3>Nome do profissional</h3>
+            <p>Dias: Seg, Qua, Sex</p>
+            <h5>R$00,00</h5>
+          </section>
+        </article>
+      </template>
+    </section>
+
+    <!-- Modal::Dialog -->
+    <dialog id="dialog">
+      <button class="dialog-close" onclick="closeDialog()">&times;</button>
+      <div class="dialog-header">
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-description"></p>
+      </div>
+
+      <div class="dialog-content">
+        <form id="formScheduling" method="post">
+          <input type="text" id="service-input" name="service" style="display: none;">
+          <input type="text" id="doctor-input" name="doctor" style="display: none;">
+          <section>
+            <label for="petName">Nome do pet</label>
+            <input type="text" id="petName" name="name" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="weight">Peso</label>
+            <input type="text" id="weight" name="weight" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="race">Raça</label>
+            <input type="text" id="race" name="race" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="description">Observações</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+            <p class="muted-p">Seja o mais detalhista possível.</p>
+          </section>
+
+          <section class="checkbox-group">
+            <div>
+              <input type="checkbox" id="seg" name="preferences" value="seg">
+              <label for="seg">Segunda-feira</label>
+            </div>
+            <div>
+              <input type="checkbox" id="terc" name="preferences" value="terc">
+              <label for="terc">Quarta-feira</label>
+            </div>
+            <div>
+              <input type="checkbox" id="quart" name="preferences" value="quart">
+              <label for="quart">Sexta-feira</label>
+            </div>
+          </section>
+          <footer class="dialog-footer">
+            <button class="cancel-button" onclick="closeDialog()">Cancelar</button>
+            <button type="submit" class="confirm-button">Confirmar</button>
+          </footer>
+        </form>
+      </div>
+
+    </dialog>
+
+    <!-- Modal:: PerfilDialog -->
+    <dialog id="perfil-dialog">
+      <button class="dialog-close" onclick="closePerfilDialog()">&times;</button>
+      <div class="dialog-header">
+        <h2 id="dialog-title">Editar Perfil</h2>
+        <p id="dialog-description">Altere suas informações pessoais e confirme para validar</p>
+      </div>
+
+      <div class="dialog-content">
+        <form id="profileForm">
+          <section>
+            <label for="name">Nome</label>
+            <input type="text" id="profile-name" name="name" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="surname">Sobrenome</label>
+            <input type="text" id="profile-surname" name="surname" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="address">Endereço</label>
+            <input type="text" id="profile-address" name="address" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="email">Email</label>
+            <input type="email" id="profile-email" name="email" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+          <footer class="dialog-footer">
+            <button class="cancel-button" onclick="closePerfilDialog()">Cancelar</button>
+            <button type="submit" class="confirm-button">Confirmar</button>
+          </footer>
+        </form>
+      </div>
+
+      <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p> -->
+
+    </dialog>
   </main>
+  <script src="scripts/modal-agendamento.js"></script>
+  <script src="scripts/services-render.js"></script>
+  <script src="scripts/modal-perfil.js"></script>
+  <script src="scripts/scripts.js"></script>
+  <script type="module" src="scripts/router.mjs"></script>
+  <script type="module" src="scripts/load-user-db.mjs"></script>
+  <script type="module" src="scripts/load-schedule-db.mjs"></script>
+  <script type="module" src="scripts/scheduling.mjs"></script>
 </body>
+
 </html>

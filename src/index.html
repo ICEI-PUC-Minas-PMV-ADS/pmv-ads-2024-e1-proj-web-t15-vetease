@@ -1,49 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>VetEase</title>
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/site.css" />
+  <title>VetEase - site</title>
 </head>
+
 <body>
+  <header>
+    <div>
+      <h5><span>Vet</span>Easy</h5>
+    </div>
+    <section>
+      <figure>
+        <img src="/src/assets/site/home-dog-01.png" alt="Cão sentado">
+      </figure>
+      <section class="head-line">
+        <p>Cuidando de quem você ama: pets e seus cuidadores, conectados em um só lugar</p>
+        <h1>Soluções veterinárias ao alcance de um clique</h1>
+        <h2>Aqui cuidamos do seu pet como se fosse da família</h2>
+        <nav>
+          <a onclick="routerPush('cadastro')">Criar conta</a>
+          <a onclick="routerPush('logar')">Entrar</a>
+        </nav>
+      </section>
+    </section>
+  </header>
   <main>
-    <section class="login-container"> <!-- form section -->
-      <div> <!-- logo text -->
-        <h1><span>Vet</span>Ease</h1>
-      </div>
-      
-      <h3>Entrar</h3>
-
-      <form action="scripts.js">
-        <section> <!-- input de mail -->
-          <label for="email">E-mail</label>
-          <input type="email" name="email" placeholder="Digite seu e-mail">
-          <p>* Digite um e-mail válido!</p>
-        </section>
-        
-        <section> <!-- input de senha -->
-          <label for="password">Senha</label>
-          <input type="password" name="password" placeholder="Sua senha aqui">
-          <p>*Obrigatório digitar uma senha correta</p>
-        </section>
-        
-        <button type="button" class="btn btn-submit" onclick="alert('logado na conta com sucesso')">Entrar</button> <!-- button -->
-      </form>
-
-      <div class="divider"> <!-- divider & text -->
-        <hr />
-        <p>Ou crie sua conta para ajudar seu pet</p>
-        <hr />
-      </div>
-
-      <button type="button" class="btn btn-create-account" id="form-submit" onclick="location.href = '/src/cadastro.html'">Criar conta</button> <!-- ir para criar conta -->
-    </section>
-    <section class="image-container"> <!-- foto section -->
-      <img src="/src/assets/logar-image.png" alt="Background image">
-      <div></div>
-    </section>
+    <div class="card" style="background-color: #fbc02d;">
+      <figure>
+        <img src="/src/assets/site/home-main-dog-01.png" alt="Cão sentado">
+        <figcaption>
+          <h2>Cuidados Completo</h2>
+          <p>Oferecemos consultas, vacinas, cirurgias e emergências. Seu pet recebe tudo o que precisa.</p>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="card" style="background-color: #03a9f4;">
+      <figure>
+        <img src="/src/assets/site/home-main-dog-02.png" alt="Cão sentado">
+        <figcaption>
+          <h2>Equipe Especializada</h2>
+          <p>Veterinários qualificados e apaixonados prontos para cuidar do seu pet com dedicação.</p>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="card" style="background-color: #f57c00;">
+      <figure>
+        <img src="/src/assets/site/home-main-dog-03.png" alt="Cão sentado">
+        <figcaption>
+          <h2>Tecnologia Avançada</h2>
+          <p>Usamos as mais recentes tecnologias para diagnósticos e tratamentos precisos. Seu pet merece o melhor.</p>
+        </figcaption>
+      </figure>
+    </div>
   </main>
+  <footer>
+    <p>© 2024 - VetEasy. Todos os direitos reservados.</p>
+  </footer>
+  <script type="module" src="scripts/router.mjs"></script>
 </body>
+
 </html>
