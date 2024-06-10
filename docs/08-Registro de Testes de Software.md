@@ -5,7 +5,11 @@ CT-01: Verificar o funcionamento dos links da página Home
 Responsável: Isabella
 
 
-Uploading 01_TPkRPuky.mp4…
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj-web-t15-vetease/assets/164930551/82426cd9-f09c-4a49-85b0-ab25e337e1d8
+
+
+
 
 
 
