@@ -1,49 +1,5 @@
 {
   "scheduling": [
-    {
-      "tutor_name": "Thiago",
-      "tutor_email": "thi@email.com",
-      "pet_name": "Dog1",
-      "weight": "10",
-      "race": "vira",
-      "description": "hajgsdjkhasd kahsd hasdhgjkah jkahs djhaskdj haskjdhajkshjkahsd jkhajskd hajkd",
-      "date": [
-          "quart"
-      ],
-      "service": "Exames de Rotina",
-      "doctor": "Dr. João da Silva",
-      "prescricao": "hajgsdjkhasd kahsd hasdhgjkah jkahs djhaskdj haskjdhajkshjkahsd jkhajskd hajkd",
-      "status": "pending"
-  },
-    {
-      "tutor_name": "Thiago",
-      "tutor_email": "thi@email.com",
-      "pet_name": "Dog1",
-      "weight": "10",
-      "race": "vira",
-      "description": "hajgsdjkhasd kahsd hasdhgjkah jkahs djhaskdj haskjdhajkshjkahsd jkhajskd hajkd",
-      "date": [
-          "quart"
-      ],
-      "service": "Exames de Rotina",
-      "doctor": "Dr. João da Silva",
-      "prescricao": "hajgsdjkhasd kahsd hasdhgjkah jkahs djhaskdj haskjdhajkshjkahsd jkhajskd hajkd",
-      "status": "cancelled"
-  },
-    {
-      "tutor_name": "Thiago",
-      "tutor_email": "thi@email.com",
-      "pet_name": "Dog1",
-      "weight": "10",
-      "race": "vira",
-      "description": "hajgsdjkhasd kahsd hasdhgjkah jkahs djhaskdj haskjdhajkshjkahsd jkhajskd hajkd",
-      "date": [
-          "quart"
-      ],
-      "service": "Exames de Rotina",
-      "doctor": "Dr. João da Silva",
-      "prescricao": "hajgsdjkhasd kahsd hasdhgjkah jkahs djhaskdj haskjdhajkshjkahsd jkhajskd hajkd",
-      "status": "confirmed"
-  }
+    
   ]
 }

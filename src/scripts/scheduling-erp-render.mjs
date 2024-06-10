@@ -26,30 +26,30 @@ document.addEventListener('DOMContentLoaded', () => {
             buttonPrescricao.style = "display:none;"
 
             buttonConfirm.style = "background-color: transparent; color: #626262; border: 1px solid #626262; cursor: not-allowed;";
-            buttonConfirm.setAttribute('disabled', 'true');
+            // buttonConfirm.setAttribute('disabled', 'true');
 
             buttonCancel.style = "background-color: transparent; color: #626262; border: 1px solid #626262; cursor: not-allowed;";
-            buttonCancel.setAttribute('disabled', 'true');
+            // buttonCancel.setAttribute('disabled', 'true');
         } else if (schedule.status === "pending") {
             status.className = "pending"
             status.innerText = "Aguardando"
 
-            buttonConfirm.setAttribute('onclick', `showPrescricaoDialog('${schedule.title}')`);
+            // buttonConfirm.setAttribute('onclick', `showPrescricaoDialog('${schedule.title}')`);
 
             buttonPrescricao.style = "display:none;"
-            buttonConfirm.setAttribute('disabled', 'false');
+            // buttonConfirm.setAttribute('disabled', 'false');
         } else {
             status.innerText = ""
 
             buttonConfirm.style = "background-color: transparent; color: #626262; border: 1px solid #626262; cursor: not-allowed;";
-            buttonConfirm.setAttribute('disabled', 'true');
+            // buttonConfirm.setAttribute('disabled', 'true');
             
             buttonCancel.style = "background-color: transparent; color: #626262; border: 1px solid #626262; cursor: not-allowed;";
-            buttonCancel.setAttribute('disabled', 'true');
+            // buttonCancel.setAttribute('disabled', 'true');
             
         }
             
-        buttonPrescricao.setAttribute('onclick', `showPrescreverDialog()`);
+        // buttonPrescricao.setAttribute('onclick', `showPrescreverDialog()`);
         const dateList= {seg: 'Segunda-Feira', terc: 'Terça-Feira', quart: 'Quarta-Feira', qui: 'Quinta-Feira', sex: 'Sexta-Feira', sab: 'Sábado', dom: 'Domingo'}
 
         title.textContent = schedule.service;
