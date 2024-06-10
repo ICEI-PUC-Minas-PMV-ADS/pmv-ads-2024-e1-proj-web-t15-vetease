@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/pesquisa.css" />
+  <link rel="stylesheet" href="styles/controle-de-agendamentos.css" />
+  <title>VetEase</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1><span>Vet</span>Ease</h1>
+    </div>
+    <nav>
+      <a onclick="routerPush('logar')">Sair</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Controle de agendamentos</h2>
+    </section>
+    <section class="container">
+      
+      <section class="search-container" id="scheduling-erp-container">
+      </section>
+
+      <template id="scheduling-erp-template">
+        <article>
+          <section class="scheduling-info">
+            <h3></h3>
+            <p></p>
+            <div>
+              <button type="button" class="btn-submit btn-cancel" onclick="showDialog('')">Cancelar</button>
+              <button type="button" class="btn-submit" onclick="showDialog('')">Confirmar</button></div>
+            
+          </section>
+
+          <hr class="divider" />
+
+          <section class="scheduling-detail">
+            <h3>Nome do profissional</h3>
+            <p>Segunda-Feira</p>
+            <h5>Confirmado</h5>
+          </section>
+        </article>
+      </template>
+    </section>
+
+    <dialog id="dialog-prescrever">
+      <button class="dialog-close" onclick="closeDialog()">&times;</button>
+      <div class="dialog-header">
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-description"></p>
+      </div>
+
+      <div class="dialog-content">
+        <form id="formScheduling" method="post">
+          <input type="text" id="service-input" name="service" style="display: none;">
+          <input type="text" id="doctor-input" name="doctor" style="display: none;">
+          <section>
+            <label for="petName">Nome do pet</label>
+            <input type="text" id="petName" name="name" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="weight">Peso</label>
+            <input type="text" id="weight" name="weight" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="race">Raça</label>
+            <input type="text" id="race" name="race" required>
+            <p>* Preencimento obrigatório</p>
+          </section>
+
+          <section>
+            <label for="description">Observações</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+            <p class="muted-p">Seja o mais detalhista possível.</p>
+          </section>
+
+          <section class="checkbox-group">
+            <div>
+              <input type="checkbox" id="seg" name="preferences" value="seg">
+              <label for="seg">Segunda-feira</label>
+            </div>
+            <div>
+              <input type="checkbox" id="terc" name="preferences" value="terc">
+              <label for="terc">Quarta-feira</label>
+            </div>
+            <div>
+              <input type="checkbox" id="quart" name="preferences" value="quart">
+              <label for="quart">Sexta-feira</label>
+            </div>
+          </section>
+          <footer class="dialog-footer">
+            <button class="cancel-button" onclick="closeDialog()">Cancelar</button>
+            <button type="submit" class="confirm-button">Confirmar</button>
+          </footer>
+        </form>
+      </div>
+
+    </dialog>
+  </main>
+  <script type="module" src="scripts/router.mjs"></script>
+  <script type="module" src="scripts/scheduling-erp-render.mjs"></script>
+    <script type="module" src="scripts/load-user-db.mjs"></script>
+    <script type="module" src="scripts/load-schedule-db.mjs"></script>
+</body>
+</html>

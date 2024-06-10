@@ -2,6 +2,26 @@ body {
   height: 100vh;
 }
 
+a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid #51926B;
+  border-radius: 6px;
+  color: #51926B;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+  /* quero que o texto sempre esteja em linha sem quebrar */
+  white-space: nowrap;
+}
+
+.btn-active {
+  background-color: #51926B;
+  border-color: #51926B;
+  color: #fff;
+}
+
 header {
   display: flex;
   gap: 1rem;
@@ -75,6 +95,12 @@ main {
         a {
           display: flex;
           border: none;
+
+          #atual-router-btn {
+            background-color: #51926B;
+            border-color: #51926B;
+            color: #51926B;
+          }
         }
 
         h3 {
@@ -119,7 +145,7 @@ main {
           border-radius: 6px;
         }
 
-        .service-info {
+        .scheduling-info {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -139,9 +165,14 @@ main {
             text-align: start;
           }
 
+          
+
           button {
             width: 100%;
             margin: 0;
+            cursor: pointer;
+
+            
           }
         }
 
@@ -155,7 +186,7 @@ main {
           margin-top: -0.2rem;
         }
 
-        .service-detail {
+        .scheduling-detail {
           width: 280px;
           align-items: center;
           justify-content: center;
@@ -168,7 +199,7 @@ main {
           }
 
           p {
-            font-size: 1rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: #626262;
             text-align: start;
@@ -179,21 +210,12 @@ main {
             font-weight: 700;
             color: #51926B;
             text-align: start;
-          }
 
-          h6.cancelled {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: red;
-            text-align: start;
+            &.cancelled {
+              color: red;
+            }
           }
-
-          h6.waiting {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #A1A1AA;
-            text-align: start;
-          }
+          
         }
       }
     }
@@ -411,16 +433,4 @@ dialog {
     }
   }
 
-  a {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border: 1px solid #51926B;
-    border-radius: 6px;
-    color: #51926B;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.2s, color 0.2s;
-    cursor: pointer;
-    /* quero que o texto sempre esteja em linha sem quebrar */
-    white-space: nowrap;
-  }
+

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/styles.css" />
-  <title>VetEase</title>
+  <script type="module" src="scripts/auth-login.mjs" defer></script>
+  <title>VetEase - Logar</title>
 </head>
 <body>
   <main>
@@ -16,20 +17,20 @@
       
       <h3>Entrar</h3>
 
-      <form action="scripts/scripts.js">
+      <form id="loginForm" method="post">
         <section> <!-- input de mail -->
           <label for="email">E-mail</label>
-          <input type="email" name="email" placeholder="Digite seu e-mail">
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
           <p>* Digite um e-mail válido!</p>
         </section>
         
         <section> <!-- input de senha -->
           <label for="password">Senha</label>
-          <input type="password" name="password" placeholder="Sua senha aqui">
+          <input type="password" id="password" name="password" placeholder="Sua senha aqui" required>
           <p>*Obrigatório digitar uma senha correta</p>
         </section>
         
-        <button type="button" class="btn-submit" onclick="alert('logado na conta com sucesso')">Entrar</button> <!-- button -->
+        <button type="submit" class="btn-submit">Entrar</button> <!-- button -->
       </form>
 
       <div class="divider"> <!-- divider & text -->
@@ -45,5 +46,6 @@
       <div></div>
     </section>
   </main>
+  <script type="module" src="scripts/load-user-db.mjs"></script>
 </body>
 </html>

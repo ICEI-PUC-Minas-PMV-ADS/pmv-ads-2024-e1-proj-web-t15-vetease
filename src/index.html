@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/site.css" />
+  <title>VetEase - site</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h5><span>Vet</span>Easy</h5>
+    </div>
+    <section>
+      <figure>
+        <img src="/src/assets/site/home-dog-01.png" alt="Cão sentado">
+      </figure>
+      <section class="head-line">
+        <p>Cuidando de quem você ama: pets e seus cuidadores, conectados em um só lugar</p>
+        <h1>Soluções veterinárias ao alcance de um clique</h1>
+        <h2>Aqui cuidamos do seu pet como se fosse da família</h2>
+        <nav>
+          <a onclick="routerPush('cadastro')">Criar conta</a>
+          <a onclick="routerPush('logar')">Entrar</a>
+        </nav>
+      </section>
+    </section>
+  </header>
+  <main>
+    <div class="card" style="background-color: #fbc02d;">
+      <figure>
+        <img src="/src/assets/site/home-main-dog-01.png" alt="Cão sentado">
+        <figcaption>
+          <h2>Cuidados Completo</h2>
+          <p>Oferecemos consultas, vacinas, cirurgias e emergências. Seu pet recebe tudo o que precisa.</p>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="card" style="background-color: #03a9f4;">
+      <figure>
+        <img src="/src/assets/site/home-main-dog-02.png" alt="Cão sentado">
+        <figcaption>
+          <h2>Equipe Especializada</h2>
+          <p>Veterinários qualificados e apaixonados prontos para cuidar do seu pet com dedicação.</p>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="card" style="background-color: #f57c00;">
+      <figure>
+        <img src="/src/assets/site/home-main-dog-03.png" alt="Cão sentado">
+        <figcaption>
+          <h2>Tecnologia Avançada</h2>
+          <p>Usamos as mais recentes tecnologias para diagnósticos e tratamentos precisos. Seu pet merece o melhor.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </main>
+  <footer>
+    <p>© 2024 - VetEasy. Todos os direitos reservados.</p>
+  </footer>
+  <script type="module" src="scripts/router.mjs"></script>
+</body>
+
+</html>

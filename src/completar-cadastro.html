@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/styles.css" />
+  <script type="module" src="scripts/auth-register-complete.mjs" defer></script>
   <title>VetEase</title>
 </head>
 <body>
@@ -16,24 +17,24 @@
       
       <h3>Completar Cadastro</h3>
 
-      <form action="scripts.js">
+      <form id="completeForm">
         <section> <!-- input de nome -->
             <label for="name">Nome</label>
-            <input type="name" name="name" placeholder="Digite seu nome">
+            <input id="name" type="name" name="name" placeholder="Digite seu nome">
             <p>* Preenchimento obrigatório</p>
         </section>
         <section> <!-- input de sobrenome -->
           <label for="surname">Sobrenome</label>
-          <input type="surname" name="surname" placeholder="Digite seu Sobrenome">
+          <input id="surname" type="surname" name="surname" placeholder="Digite seu Sobrenome">
           <p>* Preenchimento obrigatório</p>
         </section>
         
         <section> <!-- input de endereco -->
           <label for="address">Endereço Completo</label>
-          <input type="address" name="address" placeholder="Digite seu endereço">
+          <input id="address" type="address" name="address" placeholder="Digite seu endereço">
           <p>* Preenchimento obrigatório</p>
         </section>
-        <button type="button" class="btn-submit" onclick="alert('conta criada com sucesso')">Confirmar Dados</button> <!-- button -->
+        <button type="submit" class="btn-submit">Confirmar Dados</button> <!-- button -->
       </form>
     </section>
 
