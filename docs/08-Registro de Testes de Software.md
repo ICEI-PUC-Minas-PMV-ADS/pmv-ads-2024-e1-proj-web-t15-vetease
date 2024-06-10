@@ -5,6 +5,10 @@ CT-01: Verificar o funcionamento dos links da página Home
 Responsável: Isabella
 
 
+Uploading 01_TPkRPuky.mp4…
+
+
+
 CT-02: Verificar o funcionamento da seleção de serviço
 
 Responsável: Augusto César
