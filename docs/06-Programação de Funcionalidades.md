@@ -38,6 +38,7 @@ Exemplo:![logar](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj-
 #### Estrutura de Dados
 
 RF-02	Possibilitar o login dos tutores no site
+RF-01	Permitir o login do administrador da clínica veterinária
 
 #### Estrutura de Dados
 
@@ -60,7 +61,7 @@ Exemplo:![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj-
 
 #### Artesfatos de Funionalidade
 
-● 
+● RF-05	Oferecer aos Tutores de animais um meio de realizar cadastro no aplicativo/site.
 
 #### Estrutura de Dados
 
@@ -83,7 +84,7 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 #### Artesfatos de Funionalidade
 
-●
+● RF-05	Oferecer aos Tutores de animais um meio de realizar cadastro no aplicativo/site.
 
 #### Estrutura de Dados
 
@@ -108,7 +109,9 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 ● RF-12	A aplicação deve permitir ao usuário visualizar uma sessão clara de FAQ e suporte ao usuário para dúvidas e problemas comuns.
 
-● RF- 07 Habilitar agendamento e cancelamento online de consultas, vacinações e procedimentos para pets.
+● RF-07 Habilitar agendamento e cancelamento online de consultas, vacinações e procedimentos para pets.
+
+● RF-06	Permitir que Tutores de animais leiam dicas sobre bem-estar e adestramento.
 
 #### Estrutura de Dados
 
@@ -158,6 +161,8 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 ● RF-11	A aplicação deve permitir que o usuário verifique detalhes sobre seus agendamentos
 
+● RF-06	Permitir que Tutores de animais leiam dicas sobre bem-estar e adestramento.
+
 #### Estrutura de Dados
 
 ● meus-agendamentos.html
@@ -184,7 +189,7 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 #### Estrutura de Dados
 
-● 
+● meus-agendamentos.html
 
 #### Instruções de acesso
 
@@ -231,7 +236,7 @@ Exemplo: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj
 
 #### Estrutura de Dados
 
-●
+● controle-de-agendamentos.html
 
 #### Instruções de acesso
 
@@ -256,7 +261,7 @@ O acesso a tela de Controle de agendamentos poderá ser feita através do botão
 
 #### Estrutura de Dados
 
-●
+● controle-de-agendamentos.html
 
 #### Instruções de acesso
 
