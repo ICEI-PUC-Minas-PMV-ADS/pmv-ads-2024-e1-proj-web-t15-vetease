@@ -9,37 +9,46 @@ CT-02: Verificar o funcionamento da seleção de serviço
 
 Responsável: Augusto César
 
+
 CT-03: verificar se os usuários do aplicativo visualizam os próprios agendamentos e a sessão de FAQ.
 
 Responsável: Thiago
+
 
 CT-04: Verificar o cadastro de usuários
 
 Responsável: Eduardo
 
+
 CT-05: Verificar o login de usuários
 
 Responsável: Beatriz
+
 
 CT-06: Verificar a página de perfil de usuários cadastrados
 
 Responsável: Thiago
 
+
 CT-07: Verificar se o agendamento esta funcionando
 
 Responsável: Beatriz
+
 
 CT-08: verificar o controle do veterinario sobre o agendamentos
 
 Responsável: Eduardo
 
+
 CT-09: verificar o controle veterinario de agendamentos
 
 Responsável: Isabella
 
+
 CT-10: verificar a área de prescrição do tutor
 
 Responsável: Augusto César
+
 
 
 ## Avaliação
