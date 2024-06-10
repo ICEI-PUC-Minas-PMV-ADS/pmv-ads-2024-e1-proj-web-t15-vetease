@@ -243,7 +243,7 @@
   <th>Responsável</th>  
  </tr>
  <tr>
-  <td>CT-08: verificar o controle do veterinario spbre o agendamentos</td>
+  <td>CT-08: verificar o controle do veterinario sobre o agendamentos</td>
   <td>
    <ul>
     <li>RF-03:	Possibilitar que veterinários confirmem ou neguem agendamentos comunicando aos clientes.</li>
