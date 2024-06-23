@@ -41,7 +41,6 @@ function profileUserRegistration(event) {
 }
 
 
-
 function preencherCampos() {
   const email = lerCookie('user::email');
   const usersDb = JSON.parse(localStorage.getItem('users-db')) || [];
