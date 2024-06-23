@@ -34,13 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
       button.style.color = "#fff";
       button.style.border = "1px solid #a8c8b5";
       button.style.cursor = "default";
-      button.removeAttribute('disabled');
+      button.setAttribute('disabled', 'true');
     } else {
+      button.removeAttribute('disabled');
       status.className = "confirmed";
       status.innerText = "Atendido";
+      button.setAttribute('onclick', 'true');
+      button.setAttribute('onclick', `showPrescricaoDialog('${schedule.tutor_email}', '${schedule.pet_name}', '${schedule.service}')`);
     }
     
-    button.setAttribute('onclick', `showPrescricaoDialog('${schedule.title}')`);
     const dateList= {
       seg: 'Segunda-Feira',
       terc: 'Terça-Feira',
