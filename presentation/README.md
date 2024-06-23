@@ -1,10 +1,11 @@
 # Apresentação da Solução
 
 1. Apresentação dos slides
+2. 
 [VETEASE_20240623_203355_0000.pdf](https://github.com/user-attachments/files/15948177/VETEASE_20240623_203355_0000.pdf)
 
 
-2. Vídeo de apresentação do projeto
+3. Vídeo de apresentação do projeto
 
 
 
@@ -12,5 +13,6 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-e1-proj-web-t15-vetease/a
 
 
 3. Hospedagem
+
 
 https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-e1-proj-web-t15-vetease
