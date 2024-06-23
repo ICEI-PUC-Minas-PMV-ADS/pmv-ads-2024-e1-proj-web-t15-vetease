@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
       dom: 'Domingo'
     };
 
-    img.src = `/src/assets/search/servico-${['a','b','c'][index % 3]}.png`;
+    img.src = `https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-e1-proj-web-t15-veteaseassets/search/servico-${['a','b','c'][index % 3]}.png`;
     title.textContent = schedule.service;
     description.textContent = schedule.description;
     doctor.textContent = schedule.doctor;
