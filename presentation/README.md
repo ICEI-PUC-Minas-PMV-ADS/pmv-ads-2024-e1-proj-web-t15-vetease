@@ -1,3 +1,8 @@
 # Apresentação da Solução
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
+1. Apresentação dos slides
+
+
+2.Vídeo de apresentação do projeto
+
+https://1drv.ms/v/s!AtHbdJ7YDgj34lYpkNuXYjv9bK_d
