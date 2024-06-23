@@ -139,7 +139,17 @@
       </template>
     </section>
 
+    <dialog id="prescricao-dialog">
+      <button class="dialog-close" onclick="closePrescricaoDialog()">&times;</button>
+      <div class="dialog-header">
+        <h2 id="dialog-prescricao-title"></h2>
+        <p id="dialog-prescricao-description"></p>
+      </div>
 
+      <div class="dialog-content">
+        <p id="dialog-prescricao"></p>
+      </div>
+    </dialog>
 
     <!-- Modal:: PerfilDialog -->
     <dialog id="perfil-dialog">
@@ -180,18 +190,8 @@
           </footer>
         </form>
       </div>
-    </dialog>
 
-    <dialog id="prescricao-dialog">
-      <button class="dialog-close" onclick="closePrescricaoDialog()">&times;</button>
-      <div class="dialog-header">
-        <h2 id="dialog-prescricao-title"></h2>
-        <p id="dialog-prescricao-description"></p>
-      </div>
 
-      <div class="dialog-content">
-        <p id="dialog-prescricao"></p>
-      </div>
     </dialog>
 
     <script src="scripts/scripts.js"></script>
@@ -201,6 +201,7 @@
     <script type="module" src="scripts/router.mjs"></script>
     <script type="module" src="scripts/load-user-db.mjs"></script>
     <script type="module" src="scripts/load-schedule-db.mjs"></script>
+    <script type="module" src="scripts/auth-user-profile.mjs"></script>
 
   </main>
 </body>
