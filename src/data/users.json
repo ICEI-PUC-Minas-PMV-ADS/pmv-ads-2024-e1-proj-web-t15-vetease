@@ -9,26 +9,18 @@
       "isEmployee": true
     },
     {
+      "name": "Veteriário",
+      "surname": "Doe",
+      "address": "Rua dos Bobos, 0",
+      "email": "vet@email.com",
+      "password": "senha",
+      "isEmployee": true
+    },
+    {
       "name": "John",
       "surname": "Doe",
       "address": "Rua dos Bobos, 0",
       "email": "johndoe@email.com",
-      "password": "password",
-      "isEmployee": false
-    },
-    {
-      "name": "Thiago",
-      "surname": "Murtinho",
-      "address": "Rua dos Bobos, 0",
-      "email": "thi@email.com",
-      "password": "password",
-      "isEmployee": false
-    },
-    {
-      "name": "Beatriz",
-      "surname": "Silva",
-      "address": "Rua dos Bobos, 0",
-      "email": "bea@email.com",
       "password": "password",
       "isEmployee": false
     }
