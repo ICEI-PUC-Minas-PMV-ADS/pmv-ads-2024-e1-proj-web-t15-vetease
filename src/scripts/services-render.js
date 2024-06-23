@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('/src/data/services.json')
+  fetch('https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-e1-proj-web-t15-veteasedata/services.json')
       .then(response => response.json())
       .then(data => {
           const services = data.services;

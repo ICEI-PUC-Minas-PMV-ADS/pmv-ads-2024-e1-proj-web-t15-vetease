@@ -3,7 +3,7 @@ import { salvarNoLocalStorage } from "./utils.mjs";
 (() => {
   // Verifica se o localStorage já tem a lista de agendamentos
   if (!localStorage.getItem('schedules-db')) {
-    fetch('/src/data/scheduling.json')
+    fetch('https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-e1-proj-web-t15-veteasedata/scheduling.json')
       .then(response => response.json())
       .then(data => {
         const schedules = JSON.parse(localStorage.getItem('schedules-db')) || [];
