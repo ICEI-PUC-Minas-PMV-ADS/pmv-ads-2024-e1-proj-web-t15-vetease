@@ -115,13 +115,15 @@
 
 |**ID** |**Descrição** |**Prioridade** |
 | :-: | :-: | :-: |
-|RF-01 |Permitir o login do administrador da clínica veterinária  |ALTA |
+|RF-01 |Permitir o login do administrador da clínica veterinária através da conta employee, email: employeedoe@email.com
+		senha: password |ALTA |
 |RF-02 |possibilitar o login dos tutores no site. |ALTA |
-|RF-03 |Possibilitar que veterinários confirmem ou neguem agendamentos comunicando aos clientes. |ALTA |
+|RF-03 |Possibilitar que veterinários confirmem ou neguem agendamentos comunicando aos clientes ,aparecendo apenas quando logado como 
+employee. |ALTA |
 |RF-04 |Habilitar veterinários a passar orientações e prescrições médicas de forma prática para os clientes. |ALTA |
 |RF-05 |Oferecer aos Tutores de animais um meio de realizar cadastro no aplicativo/site. |ALTA |
 |RF-06 |Permitir que Tutores de animais leiam dicas sobre bem-estar e adestramento. |ALTA |
-|RF-07 |Habilitar agendamento e cancelamento online de consultas, vacinações e procedimentos para pets. |ALTA |
+|RF-07 |Habilitar agendamento online de consultas, vacinações e procedimentos para pets. |ALTA |
 |RF-08 |Prover suporte pós-atendimento, incluindo informações sobre posologia e prescrição. |MÉDIA |
 |RF-09 |A aplicação deve oferecer uma funcionalidade de selecionar serviços para permitir ao usuário realizar o agendamento.|ALTA |
 |RF-10 |A aplicação deve permitir ao usuário atualizar as informações registradas no cadastro.|MEDIA |
