@@ -14,7 +14,8 @@
   <td>CT-01: Verificar o funcionamento dos links da página Home</td>
   <td>
    <ul>
-    <li>RF-01:	O site deve permitir o login do administrador da clínica veterinária.</li>
+    <li>RF-01:	Permitir o login do administrador da clínica veterinária através da conta employee, email: employeedoe@email.com
+		senha: password.</li>
    <li>RF-05:	O site deve permitir aos tutores de animais um meio de realizar cadastro </li>
    <li>RF-02:	O site deve permitir o login dos tutores.</li>
    </ul>
@@ -148,7 +149,8 @@
   <td>
    <ul>
    <li>RF-02: O site deve permitir ao usuário fazer o login da sua conta.</li>
-   <li>RF-01: o site deve permitir o login do administrador da clínica veterinária. </li>
+   <li>RF-01: Permitir o login do administrador da clínica veterinária através da conta employee, email: employeedoe@email.com
+		senha: password. </li>
    </ul>
   </td>
   <td>Verificar se o login está sendo feito corretamente. </td>
@@ -247,7 +249,7 @@
   <td>CT-08: verificar o controle do veterinario sobre o agendamentos</td>
   <td>
    <ul>
-    <li>RF-03:	Possibilitar que veterinários confirmem ou neguem agendamentos comunicando aos clientes.</li>
+    <li>RF-03:	Possibilitar que veterinários confirmem ou neguem agendamentos comunicando aos clientes, aparecendo apenas quando logado como employee.</li>
    </ul>
   </td>
   <td> Permitir aos profissionais a vizualização os agendamentos, podendo negar ou confirmar o mesmo.</td>
