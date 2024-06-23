@@ -6,7 +6,7 @@ function showDialog(title) {
     const doctorField =  document.getElementById('doctor-input');
 
     
-    fetch('https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-e1-proj-web-t15-veteasedata/services.json')
+    fetch('https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-e1-proj-web-t15-vetease/data/services.json')
       .then(response => response.json())
       .then(data => {
         const service = data.services.find(service => service.title === title);

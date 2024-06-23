@@ -2,7 +2,7 @@ import { salvarNoLocalStorage } from "./utils.mjs";
 
 
 (() => {
-  fetch('https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-e1-proj-web-t15-veteasedata/users.json')
+  fetch('https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-e1-proj-web-t15-vetease/data/users.json')
     .then(response => response.json())
     .then(data => {    
       const usersDb = JSON.parse(localStorage.getItem('users-db')) || [];
