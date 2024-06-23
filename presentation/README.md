@@ -1,11 +1,11 @@
 # Apresentação da Solução
 
 1. Apresentação dos slides
-2. 
+ 
 [VETEASE_20240623_203355_0000.pdf](https://github.com/user-attachments/files/15948177/VETEASE_20240623_203355_0000.pdf)
 
 
-3. Vídeo de apresentação do projeto
+2. Vídeo de apresentação do projeto
 
 
 
