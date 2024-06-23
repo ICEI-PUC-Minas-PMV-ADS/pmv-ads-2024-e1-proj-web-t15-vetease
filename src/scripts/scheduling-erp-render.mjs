@@ -1,5 +1,4 @@
-import { lerDoLocalStorage } from "./utils.mjs";
-// import { showPrescricaoDialog } from "./modal-prescricao.mjs";
+import { lerDoLocalStorage, salvarNoLocalStorage } from "./utils.mjs";
 
 document.addEventListener('DOMContentLoaded', () => {
     const schedules = lerDoLocalStorage('schedules-db') || [];
@@ -11,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 
         const title = clone.querySelector('.scheduling-info h3');
         const description = clone.querySelector('.scheduling-info p');
-        const buttonCancel = clone.querySelector('#btn-cancel');
-        const buttonConfirm = clone.querySelector('#btn-confirm');
+        const buttonCancel = clone.querySelector('#btn-scheduling-cancel');
+        const buttonConfirm = clone.querySelector('#btn-scheduling-confirm');
         const buttonPrescricao = clone.querySelector('#btn-prescerver');
 
         const status = clone.querySelector('.scheduling-detail h5');
@@ -26,30 +25,29 @@ document.addEventListener('DOMContentLoaded', () => {
             buttonPrescricao.style = "display:none;"
 
             buttonConfirm.style = "background-color: transparent; color: #626262; border: 1px solid #626262; cursor: not-allowed;";
-            // buttonConfirm.setAttribute('disabled', 'true');
+            buttonConfirm.setAttribute('disabled', 'true');
 
             buttonCancel.style = "background-color: transparent; color: #626262; border: 1px solid #626262; cursor: not-allowed;";
-            // buttonCancel.setAttribute('disabled', 'true');
+            buttonCancel.setAttribute('disabled', 'true');
         } else if (schedule.status === "pending") {
             status.className = "pending"
             status.innerText = "Aguardando"
 
-            // buttonConfirm.setAttribute('onclick', `showPrescricaoDialog('${schedule.title}')`);
+            buttonConfirm.setAttribute('onclick', `scheduleConfirm('${schedule.tutor_email}', '${schedule.pet_name}', '${schedule.service}')`);
+            buttonCancel.setAttribute('onclick', `scheduleCancel('${schedule.tutor_email}', '${schedule.pet_name}', '${schedule.service}')`);
 
             buttonPrescricao.style = "display:none;"
-            // buttonConfirm.setAttribute('disabled', 'false');
         } else {
             status.innerText = ""
 
             buttonConfirm.style = "background-color: transparent; color: #626262; border: 1px solid #626262; cursor: not-allowed;";
-            // buttonConfirm.setAttribute('disabled', 'true');
             
             buttonCancel.style = "background-color: transparent; color: #626262; border: 1px solid #626262; cursor: not-allowed;";
-            // buttonCancel.setAttribute('disabled', 'true');
+
+            buttonPrescricao.setAttribute('onclick', `showPrescreverDialog('${schedule.tutor_email}', '${schedule.pet_name}', '${schedule.service}')`);
             
         }
             
-        // buttonPrescricao.setAttribute('onclick', `showPrescreverDialog()`);
         const dateList= {seg: 'Segunda-Feira', terc: 'Terça-Feira', quart: 'Quarta-Feira', qui: 'Quinta-Feira', sex: 'Sexta-Feira', sab: 'Sábado', dom: 'Domingo'}
 
         title.textContent = schedule.service;
@@ -62,3 +60,41 @@ document.addEventListener('DOMContentLoaded', () => {
         container.appendChild(clone);
     });
 });
+
+
+function scheduleConfirm(tutor_email, pet_name, service) {
+    const confirmValue = confirm(`Tem certeza que deseja confirmar o agendamento?`);
+
+    if(confirmValue) {
+        const schedules = lerDoLocalStorage('schedules-db') || [];
+    
+        const schedule = schedules.find(schedule => `${schedule.tutor_email}${schedule.pet_name}${schedule.service}` === `${tutor_email}${pet_name}${service}`);
+    
+        schedule.status = 'confirmed';
+    
+        salvarNoLocalStorage('schedules-db', schedules);
+        
+        location.reload();
+    }
+}
+
+window.scheduleConfirm = scheduleConfirm;
+
+function scheduleCancel(tutor_email, pet_name, service) {
+    const confirmValue = confirm(`Tem certeza que deseja cancelar o agendamento?`);
+
+    if(confirmValue) {
+        const schedules = lerDoLocalStorage('schedules-db') || [];
+
+        const schedule = schedules.find(schedule => {
+            return `${schedule.tutor_email}${schedule.pet_name}${schedule.service}` === `${tutor_email}${pet_name}${service}`
+        })
+        schedule.status = 'cancelled';
+
+        salvarNoLocalStorage('schedules-db', schedules);
+
+        location.reload();
+    }
+}
+
+window.scheduleCancel = scheduleCancel;
