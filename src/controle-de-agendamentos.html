@@ -35,8 +35,8 @@
             <h3></h3>
             <p></p>
             <div>
-              <button type="button" class="btn-submit btn-cancel" id="btn-cancel" onclick="confirm(`Tem certeza que quer cancelar?`)">Cancelar</button>
-              <button type="button" class="btn-submit" id="btn-confirm" onclick="confirm(`Tem certeza que quer confirmar?`)">Confirmar</button>
+              <button type="button" class="btn-submit btn-cancel" id="btn-scheduling-cancel" onclick="confirm(`Tem certeza que quer cancelar?`)">Cancelar</button>
+              <button type="button" class="btn-submit" id="btn-scheduling-confirm" onclick="confirm(`Tem certeza que quer confirmar?`)">Confirmar</button>
             </div>
 
           </section>
@@ -54,7 +54,7 @@
     </section>
 
     <dialog id="dialog-prescrever">
-      <button class="dialog-close" onclick="closePrescricaoDialog()">&times;</button>
+      <button class="dialog-close" onclick="closePrescreverDialog()">&times;</button>
       <div class="dialog-header">
         <h2 id="dialog-title"></h2>
         <p id="dialog-description"></p>
@@ -74,8 +74,8 @@
 
          
           <footer class="dialog-footer">
-            <button class="cancel-button" onclick="closePrescricaoDialog()">Cancelar</button>
-            <button type="submit" class="confirm-button">Confirmar</button>
+            <button class="cancel-button" onclick="closePrescreverDialog()">Cancelar</button>
+            <button type="submit" class="confirm-button" id="dialog-prescrever-submit">Confirmar</button>
           </footer>
         </form>
       </div>
