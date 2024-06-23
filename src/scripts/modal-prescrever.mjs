@@ -1,18 +1,20 @@
-import { lerDoLocalStorage, lerCookie } from "./utils.mjs";
+import { lerDoLocalStorage, lerCookie, salvarNoLocalStorage } from "./utils.mjs";
 
-function showPrescreverDialog() {
+document.getElementById('formPrescrever').addEventListener('submit', (event) => event.preventDefault());
+
+function preencherCampos(tutor_email, pet_name, service) {
+    const schedules = lerDoLocalStorage('schedules-db') || [];
+    const schedule = schedules.find(schedule => `${schedule.tutor_email}${schedule.pet_name}${schedule.service}` === `${tutor_email}${pet_name}${service}`);
+  
+    document.getElementById('prescricao').value = schedule.prescricao || '';
+  }
+
+function showPrescreverDialog(tutor_email, pet_name, service) {
     const dialog = document.getElementById('dialog-prescrever');
-    // const schedules = lerDoLocalStorage('schedules-db') || [];
-    // const email = lerCookie('user::email');
+    preencherCampos(tutor_email, pet_name, service);
 
-    // const schedule = schedules.find(schedule => schedule.tutor_email === email);
-
-    // const dialogTitle = `Prescrição`;
-    // const dialogDescription = document.getElementById('dialog-prescricao');
-
-    // dialogTitle.textContent = `Prescrição - ${schedule.tutor_name}  - ${schedule.pet_name}`;
-    // dialogDescription.textContent = schedule.prescricao;
-
+    const submitButton = document.getElementById('dialog-prescrever-submit');
+    submitButton.setAttribute('onclick', `prescreverSubmit('${tutor_email}', '${pet_name}', '${service}')`);
 
     dialog.showModal();
 }
@@ -22,10 +24,9 @@ function closePrescreverDialog() {
     dialog.close();
 }
 
-function prescreverSubmit() {
-    const email = lerCookie('user::email');
+function prescreverSubmit(tutor_email, pet_name, service) {
     const schedules = lerDoLocalStorage('schedules-db') || [];
-    const schedule = schedules.find(schedule => schedule.tutor_email === email);
+    const schedule = schedules.find(schedule => `${schedule.tutor_email}${schedule.pet_name}${schedule.service}` === `${tutor_email}${pet_name}${service}`);
 
     const prescricao = document.getElementById('prescricao').value;
 
@@ -34,10 +35,10 @@ function prescreverSubmit() {
     salvarNoLocalStorage('schedules-db', schedules);
 
     alert('Prescrição salva com sucesso!');
+    document.getElementById('prescricao').value = undefined;
     closePrescreverDialog();
 }
 
-document.getElementById('formPrescrever').addEventListener('submit', prescreverSubmit);
-
+window.prescreverSubmit = prescreverSubmit;
 window.showPrescreverDialog = showPrescreverDialog;
 window.closePrescreverDialog = closePrescreverDialog;

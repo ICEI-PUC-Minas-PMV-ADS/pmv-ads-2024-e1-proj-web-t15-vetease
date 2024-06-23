@@ -28,50 +28,5 @@ export function lerCookie(nome) {
 }
 
 
-function abrirIndexedDB(nomeDB, versao, callback) {
-  const request = indexedDB.open(nomeDB, versao);
-  
-  request.onerror = function(event) {
-      console.error("Erro ao abrir IndexedDB:", event);
-  };
-  
-  request.onsuccess = function(event) {
-      callback(event.target.result);
-  };
-  
-  request.onupgradeneeded = function(event) {
-      const db = event.target.result;
-      db.createObjectStore("dados", { keyPath: "id", autoIncrement: true });
-  };
-}
-
-function salvarNoIndexedDB(db, valor) {
-  const transacao = db.transaction(["dados"], "readwrite");
-  const store = transacao.objectStore("dados");
-  store.add(valor);
-  
-  transacao.oncomplete = function() {
-      console.log("Dados salvos com sucesso no IndexedDB.");
-  };
-  
-  transacao.onerror = function(event) {
-      console.error("Erro ao salvar no IndexedDB:", event);
-  };
-}
-
-function lerDoIndexedDB(db, id, callback) {
-  const transacao = db.transaction(["dados"]);
-  const store = transacao.objectStore("dados");
-  const request = store.get(id);
-  
-  request.onsuccess = function(event) {
-      callback(event.target.result);
-  };
-  
-  request.onerror = function(event) {
-      console.error("Erro ao ler do IndexedDB:", event);
-  };
-}
-
 
 

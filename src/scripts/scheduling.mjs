@@ -47,5 +47,9 @@ function scheduleRegistration(event) {
   salvarNoLocalStorage('schedules-db', schedulesDb);
 
   alert('Agendamento confirmado!');
+  
+  document.getElementById('formScheduling').reset();
+
   closeDialog();
+  
 }
